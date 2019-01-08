@@ -1,0 +1,62 @@
+<?xml version='1.0' ?>
+<root org="doublechaintech">
+
+	<platform
+		name="Chain eComerce Platform"
+		introduction="new generation of eCommerce platform based on opensource and modern tech"
+		current_version="V1.0"
+		
+	
+	/>
+	<product
+		name="A beautiful jean"
+		platform="$(platform)"
+		avarage_score="4.5"
+	/>
+	
+	<profile
+		name="Philip Zhang|Naveen Kumar R |VENKATESH GADUPUTI"
+		last_update_time="updatTime()"
+		platform="$(platform)"
+	/>
+	
+	
+	<rating
+		user="$(profile)"
+		product="$(product)"
+		score="1|2|3|4|5"
+		update_time="updateTime()"
+		
+	/>
+	
+	
+	<review
+		title="Credit Card|GiftCard"
+		content="text()"
+		user="$(profile)"
+		product="$(product)"
+		update_time="updateTime()"
+		
+	/>
+	<blog
+		title="a consumer order"
+		content="text()"
+		user="$(profile)"
+		product="$(product)"
+		update_time="updateTime()"
+	/>
+	
+	
+	
+	
+</root>
+ 
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,166 @@
+@warning product.avarage_score: word 'avarage' seems not found in library
+@warning object definition: blog: word 'blog' seems not found in library
+
+
+
+=================Execute Report (Model Time 190108T1830) @Tue Jan 08 23:41:11 CST 2019, 19 objects and 141 fields===========================
+
+
+
+ processing: platform
+
+
+ processing: product
+
+
+ processing: product.platform.platform
+
+Info: Add virtual field [products(es)] to <platform>
+	product.platform
+
+
+ processing: profile
+
+
+ processing: profile.platform.platform
+
+Info: Add virtual field [profiles(es)] to <platform>
+	profile.platform
+
+
+ processing: rating
+
+
+ processing: rating.profile.user
+
+Info: Add virtual field [ratings(es)] to <profile>
+	rating.user
+
+
+ processing: rating.product.product
+
+Info: Add virtual field [ratings(es)] to <product>
+	rating.product
+
+
+ processing: review
+
+
+ processing: review.profile.user
+
+Info: Add virtual field [reviews(es)] to <profile>
+	review.user
+
+
+ processing: review.product.product
+
+Info: Add virtual field [reviews(es)] to <product>
+	review.product
+
+
+ processing: blog
+
+
+ processing: blog.profile.user
+
+Info: Add virtual field [blogs(es)] to <profile>
+	blog.user
+
+
+ processing: blog.product.product
+
+Info: Add virtual field [blogs(es)] to <product>
+	blog.product
+
+
+**************************************************
+
+platform{
+	fields(5){
+		string	id('ABCDEFGIJK000001'), verb: false, required: true;
+		string	name('Chain eComerce Platform'), verb: false, required: true;
+		string	introduction('new generation of eCommerce platform based on opensource and modern tech'), verb: false, required: true;
+		string	current_version('V1.0'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(2){
+		productList	platform(基本信息)--platform;
+		profileList	platform(基本信息)--platform;
+	}
+} depth=0; isRoot = true
+
+product{
+	fields(5){
+		string	id('ABCDEFGIJK000001'), verb: false, required: true;
+		string	name('A beautiful jean'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: productList;
+		double	avarage_score('4.5'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(3){
+		ratingList	product(基本信息)--product;
+		reviewList	product(基本信息)--product;
+		blogList	product(基本信息)--product;
+	}
+} depth=1; isRoot = false
+
+profile{
+	fields(5){
+		string	id('ABCDEFGIJK000001'), verb: false, required: true;
+		string	name('Philip Zhang|Naveen Kumar R |VENKATESH GADUPUTI'), verb: false, required: true;
+		string	last_update_time('updatTime()'), verb: false, required: true;
+		platform	platform('$(object)'), verb: false, required: true, referenceBy: profileList;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(3){
+		ratingList	user(基本信息)--user;
+		reviewList	user(基本信息)--user;
+		blogList	user(基本信息)--user;
+	}
+} depth=1; isRoot = false
+
+rating{
+	fields(6){
+		string	id('ABCDEFGIJK000001'), verb: false, required: true;
+		profile	user('$(object)'), verb: false, required: true, referenceBy: ratingList;
+		product	product('$(object)'), verb: false, required: true, referenceBy: ratingList;
+		int	score('1|2|3|4|5'), verb: false, required: true;
+		date_time_update	update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=2; isRoot = false
+
+review{
+	fields(7){
+		string	id('ABCDEFGIJK000001'), verb: false, required: true;
+		string	title('Credit Card|GiftCard'), verb: false, required: true;
+		string_longtext	content('text()'), verb: false, required: true;
+		profile	user('$(object)'), verb: false, required: true, referenceBy: reviewList;
+		product	product('$(object)'), verb: false, required: true, referenceBy: reviewList;
+		date_time_update	update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=2; isRoot = false
+
+blog{
+	fields(7){
+		string	id('ABCDEFGIJK000001'), verb: false, required: true;
+		string	title('a consumer order'), verb: false, required: true;
+		string_longtext	content('text()'), verb: false, required: true;
+		profile	user('$(object)'), verb: false, required: true, referenceBy: blogList;
+		product	product('$(object)'), verb: false, required: true, referenceBy: blogList;
+		date_time_update	update_time('updateTime()'), verb: false, required: true;
+		int	version('2147483647'), verb: false, required: true;
+	}
+	references field(0){
+	}
+} depth=2; isRoot = false
+
+
+
+
+=================================End Report=================================
