@@ -18,7 +18,7 @@ const testValues = {};
 /*
 const testValues = {
   name: 'A beautiful jean',
-  avarageScore: '3.85',
+  avarageScore: '3.26',
   platformId: 'P000001',
 }
 */
