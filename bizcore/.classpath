@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="ugc_core_src"/>
-	<classpathentry kind="src" path="ugc_custom_src"/>
+	<classpathentry kind="src" path="WEB-INF/ugc_core_src"/>
+	<classpathentry kind="src" path="WEB-INF/ugc_custom_src"/>
 	<classpathentry kind="src" path="caf_core_src"/>
 	<classpathentry kind="src" path="caf_custom_src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>

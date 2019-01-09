@@ -13,37 +13,106 @@ public class CustomRelation extends BaseRelation{
 		//replaceGenericRelation("Profile"                               , BaseRelation.TRUST_CHAIN_ALL, "platform");
 		//replaceGenericRelation("Rating"                                , BaseRelation.TRUST_CHAIN_ALL, "user");
 		//replaceGenericRelation("Rating"                                , BaseRelation.TRUST_CHAIN_ALL, "product");
-		//replaceGenericRelation("Review"                          <html>
-<body>
-<h1>500 Servlet Exception</h1>
-<code><pre>
-<script language='javascript' type='text/javascript'>
-function show() { document.getElementById('trace').style.display = ''; }
-</script>
-<a style="text-decoration" href="javascript:show();">[show]</a> java.lang.NullPointerException
-<span id="trace" style="display:none">
-java.lang.NullPointerException
-	at com.terapico.system.ObjectCollection.getFieldByKey(ObjectCollection.java:849)
-	at _jsp._javaweb._java_0user_0base_0function__jsp._jspService(javaweb/java_user_base_function.jsp:563)
-	at com.caucho.jsp.JavaPage.service(JavaPage.java:61)
-	at com.caucho.jsp.Page.pageservice(Page.java:578)
-	at com.caucho.server.dispatch.PageFilterChain.doFilter(PageFilterChain.java:195)
-	at com.caucho.server.webapp.DispatchFilterChain.doFilter(DispatchFilterChain.java:112)
-	at com.caucho.server.dispatch.ServletInvocation.service(ServletInvocation.java:265)
-	at com.caucho.server.webapp.RequestDispatcherImpl.include(RequestDispatcherImpl.java:504)
-	at com.caucho.server.webapp.RequestDispatcherImpl.include(RequestDispatcherImpl.java:368)
-	at com.caucho.jsp.PageContextImpl.include(PageContextImpl.java:1009)
-	at _jsp._javaweb._java_0app_0index__jsp._jspService(javaweb/java_app_index.jsp:61)
-	at com.caucho.jsp.JavaPage.service(JavaPage.java:61)
-	at com.caucho.jsp.Page.pageservice(Page.java:578)
-	at com.caucho.server.dispatch.PageFilterChain.doFilter(PageFilterChain.java:195)
-	at com.caucho.server.webapp.WebAppFilterChain.doFilter(WebAppFilterChain.java:187)
-	at com.caucho.server.dispatch.ServletInvocation.service(ServletInvocation.java:265)
-	at com.caucho.server.http.HttpRequest.handleRequest(HttpRequest.java:273)
-	at com.caucho.server.port.TcpConnection.run(TcpConnection.java:682)
-	at com.caucho.util.ThreadPool$Item.runTasks(ThreadPool.java:743)
-	at com.caucho.util.ThreadPool$Item.run(ThreadPool.java:662)
-	at java.lang.Thread.run(Thread.java:745)
-</span>
-</pre></code>
-</body></html>
+		//replaceGenericRelation("Review"                                , BaseRelation.TRUST_CHAIN_ALL, "user");
+		//replaceGenericRelation("Review"                                , BaseRelation.TRUST_CHAIN_ALL, "product");
+		//replaceGenericRelation("Blog"                                  , BaseRelation.TRUST_CHAIN_ALL, "user");
+		//replaceGenericRelation("Blog"                                  , BaseRelation.TRUST_CHAIN_ALL, "product");
+		//replaceGenericRelation("UserWhiteList"                         , BaseRelation.TRUST_CHAIN_ALL, "domain");
+		//replaceGenericRelation("SecUser"                               , BaseRelation.TRUST_CHAIN_ALL, "domain");
+		//replaceGenericRelation("UserApp"                               , BaseRelation.TRUST_CHAIN_ALL, "secUser");
+		//replaceGenericRelation("ListAccess"                            , BaseRelation.TRUST_CHAIN_ALL, "app");
+		//replaceGenericRelation("ObjectAccess"                          , BaseRelation.TRUST_CHAIN_ALL, "app");
+		//replaceGenericRelation("LoginHistory"                          , BaseRelation.TRUST_CHAIN_ALL, "secUser");
+		//replaceGenericRelation("FormMessage"                           , BaseRelation.TRUST_CHAIN_ALL, "form");
+		//replaceGenericRelation("FormFieldMessage"                      , BaseRelation.TRUST_CHAIN_ALL, "form");
+		//replaceGenericRelation("FormField"                             , BaseRelation.TRUST_CHAIN_ALL, "form");
+		//replaceGenericRelation("FormAction"                            , BaseRelation.TRUST_CHAIN_ALL, "form");
+
+	}
+	
+	protected void prepareRelationIndex()
+	{
+		super.prepareRelationIndex();
+		/*
+		
+		Note: you could delete some of the possible relations if you do not want it.
+		Just uncomment the definition line and replaceRelationIndex line to replace existing one.
+		
+		*/
+		//String [] productRelatedObjectNames = {"platform:Platform"};
+		//replaceRelationIndex("Product",productRelatedObjectNames);
+
+		//String [] profileRelatedObjectNames = {"platform:Platform"};
+		//replaceRelationIndex("Profile",profileRelatedObjectNames);
+
+		//String [] ratingRelatedObjectNames = {"user:Profile","product:Product"};
+		//replaceRelationIndex("Rating",ratingRelatedObjectNames);
+
+		//String [] reviewRelatedObjectNames = {"user:Profile","product:Product"};
+		//replaceRelationIndex("Review",reviewRelatedObjectNames);
+
+		//String [] blogRelatedObjectNames = {"user:Profile","product:Product"};
+		//replaceRelationIndex("Blog",blogRelatedObjectNames);
+
+		//String [] userWhiteListRelatedObjectNames = {"domain:UserDomain"};
+		//replaceRelationIndex("UserWhiteList",userWhiteListRelatedObjectNames);
+
+		//String [] secUserRelatedObjectNames = {"domain:UserDomain"};
+		//replaceRelationIndex("SecUser",secUserRelatedObjectNames);
+
+		//String [] userAppRelatedObjectNames = {"sec_user:SecUser"};
+		//replaceRelationIndex("UserApp",userAppRelatedObjectNames);
+
+		//String [] listAccessRelatedObjectNames = {"app:UserApp"};
+		//replaceRelationIndex("ListAccess",listAccessRelatedObjectNames);
+
+		//String [] objectAccessRelatedObjectNames = {"app:UserApp"};
+		//replaceRelationIndex("ObjectAccess",objectAccessRelatedObjectNames);
+
+		//String [] loginHistoryRelatedObjectNames = {"sec_user:SecUser"};
+		//replaceRelationIndex("LoginHistory",loginHistoryRelatedObjectNames);
+
+		//String [] formMessageRelatedObjectNames = {"form:GenericForm"};
+		//replaceRelationIndex("FormMessage",formMessageRelatedObjectNames);
+
+		//String [] formFieldMessageRelatedObjectNames = {"form:GenericForm"};
+		//replaceRelationIndex("FormFieldMessage",formFieldMessageRelatedObjectNames);
+
+		//String [] formFieldRelatedObjectNames = {"form:GenericForm"};
+		//replaceRelationIndex("FormField",formFieldRelatedObjectNames);
+
+		//String [] formActionRelatedObjectNames = {"form:GenericForm"};
+		//replaceRelationIndex("FormAction",formActionRelatedObjectNames);
+
+		
+		
+	
+	}
+	
+	
+	@Override
+	public String getRelation(String fromType, String fromId, String targetField, String targetId)
+	{
+
+		String relation = super.getRelation(fromType, fromId, targetField, targetId);
+		if(relation == null){
+			throw new IllegalArgumentException("Not able to find any relation to the target type: "+ targetField);
+		}
+		return relation;
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
