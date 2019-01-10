@@ -77,7 +77,7 @@ public class UgcUserContextImpl extends UserContextImpl implements UgcUserContex
 	public Map<String,String> getLocaleMap(){
 		
 		init();
-		return chineseMap;
+		return englishMap;
 		
 	}
 	
