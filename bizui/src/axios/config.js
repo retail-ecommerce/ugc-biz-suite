@@ -1,7 +1,7 @@
 //savefileifnotexist
 export const SYSTEM_SHORT_NAME = "ugc" //Use for requssting different apps
 export const SYSTEM_LOCAL_NAME = "UGC Services" 
-export const BUILD_TIIME="Wed Jan 09 23:44:03 CST 2019"
+export const BUILD_TIIME="Fri Jan 11 01:23:42 CST 2019"
 export const MEDIA_UPLOAD_URL="https://www.doublechaintech.com/mss/upload.html"
 export const MEDIA_PREFIX="https://www.doublechaintech.com/mss/"
 
