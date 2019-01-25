@@ -5,14 +5,14 @@ import { Table, Alert, Badge } from 'antd'
 import styles from './Blog.table.less'
 import ImagePreview from '../../components/ImagePreview'
 import BlogBase from './Blog.base'
-
+import appLocaleName from '../../common/Locale.tool'
 
 class BlogModalTable extends PureComponent {
   render() {
     // const { data,count,current, owner } = this.props
     const { data } = this.props
 	const {displayColumns} = BlogBase
-	
+	const userContext = null
 	if(!data){
 		return null
 	}
@@ -26,7 +26,7 @@ class BlogModalTable extends PureComponent {
           <Alert
             message={(
               <p>
-                一共 <a style={{ fontWeight: 600 }}>{data.length}</a> 项 
+                {appLocaleName(userContext,"Totally")} <a style={{ fontWeight: 600 }}>{data.length}</a> {appLocaleName(userContext,"Items")} 
               </p>
             )}
             type="warning"

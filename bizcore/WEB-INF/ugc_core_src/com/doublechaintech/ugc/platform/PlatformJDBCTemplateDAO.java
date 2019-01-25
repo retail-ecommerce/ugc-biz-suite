@@ -225,9 +225,10 @@ public class PlatformJDBCTemplateDAO extends UgcNamingServiceDAO implements Plat
  		return checkOptions(options,PlatformTokens.PRODUCT_LIST);
  	}
  	protected boolean isAnalyzeProductListEnabled(Map<String,Object> options){		
- 		return checkOptions(options,PlatformTokens.PRODUCT_LIST+".analyze");
+ 		return true;
+ 		//return checkOptions(options,PlatformTokens.PRODUCT_LIST+".analyze");
  	}
-
+	
 	protected boolean isSaveProductListEnabled(Map<String,Object> options){
 		return checkOptions(options, PlatformTokens.PRODUCT_LIST);
 		
@@ -239,9 +240,10 @@ public class PlatformJDBCTemplateDAO extends UgcNamingServiceDAO implements Plat
  		return checkOptions(options,PlatformTokens.PROFILE_LIST);
  	}
  	protected boolean isAnalyzeProfileListEnabled(Map<String,Object> options){		
- 		return checkOptions(options,PlatformTokens.PROFILE_LIST+".analyze");
+ 		return true;
+ 		//return checkOptions(options,PlatformTokens.PROFILE_LIST+".analyze");
  	}
-
+	
 	protected boolean isSaveProfileListEnabled(Map<String,Object> options){
 		return checkOptions(options, PlatformTokens.PROFILE_LIST);
 		
@@ -279,7 +281,7 @@ public class PlatformJDBCTemplateDAO extends UgcNamingServiceDAO implements Plat
 	 		extractProductList(platform, loadOptions);
  		}	
  		if(isAnalyzeProductListEnabled(loadOptions)){
-	 		// analyzeProductList(platform, loadOptions);
+	 		analyzeProductList(platform, loadOptions);
  		}
  		
 		
@@ -287,7 +289,7 @@ public class PlatformJDBCTemplateDAO extends UgcNamingServiceDAO implements Plat
 	 		extractProfileList(platform, loadOptions);
  		}	
  		if(isAnalyzeProfileListEnabled(loadOptions)){
-	 		// analyzeProfileList(platform, loadOptions);
+	 		analyzeProfileList(platform, loadOptions);
  		}
  		
 		

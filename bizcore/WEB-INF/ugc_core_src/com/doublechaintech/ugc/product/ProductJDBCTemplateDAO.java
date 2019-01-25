@@ -278,9 +278,10 @@ public class ProductJDBCTemplateDAO extends UgcNamingServiceDAO implements Produ
  		return checkOptions(options,ProductTokens.RATING_LIST);
  	}
  	protected boolean isAnalyzeRatingListEnabled(Map<String,Object> options){		
- 		return checkOptions(options,ProductTokens.RATING_LIST+".analyze");
+ 		return true;
+ 		//return checkOptions(options,ProductTokens.RATING_LIST+".analyze");
  	}
-
+	
 	protected boolean isSaveRatingListEnabled(Map<String,Object> options){
 		return checkOptions(options, ProductTokens.RATING_LIST);
 		
@@ -292,9 +293,10 @@ public class ProductJDBCTemplateDAO extends UgcNamingServiceDAO implements Produ
  		return checkOptions(options,ProductTokens.REVIEW_LIST);
  	}
  	protected boolean isAnalyzeReviewListEnabled(Map<String,Object> options){		
- 		return checkOptions(options,ProductTokens.REVIEW_LIST+".analyze");
+ 		return true;
+ 		//return checkOptions(options,ProductTokens.REVIEW_LIST+".analyze");
  	}
-
+	
 	protected boolean isSaveReviewListEnabled(Map<String,Object> options){
 		return checkOptions(options, ProductTokens.REVIEW_LIST);
 		
@@ -306,9 +308,10 @@ public class ProductJDBCTemplateDAO extends UgcNamingServiceDAO implements Produ
  		return checkOptions(options,ProductTokens.BLOG_LIST);
  	}
  	protected boolean isAnalyzeBlogListEnabled(Map<String,Object> options){		
- 		return checkOptions(options,ProductTokens.BLOG_LIST+".analyze");
+ 		return true;
+ 		//return checkOptions(options,ProductTokens.BLOG_LIST+".analyze");
  	}
-
+	
 	protected boolean isSaveBlogListEnabled(Map<String,Object> options){
 		return checkOptions(options, ProductTokens.BLOG_LIST);
 		
@@ -350,7 +353,7 @@ public class ProductJDBCTemplateDAO extends UgcNamingServiceDAO implements Produ
 	 		extractRatingList(product, loadOptions);
  		}	
  		if(isAnalyzeRatingListEnabled(loadOptions)){
-	 		// analyzeRatingList(product, loadOptions);
+	 		analyzeRatingList(product, loadOptions);
  		}
  		
 		
@@ -358,7 +361,7 @@ public class ProductJDBCTemplateDAO extends UgcNamingServiceDAO implements Produ
 	 		extractReviewList(product, loadOptions);
  		}	
  		if(isAnalyzeReviewListEnabled(loadOptions)){
-	 		// analyzeReviewList(product, loadOptions);
+	 		analyzeReviewList(product, loadOptions);
  		}
  		
 		
@@ -366,7 +369,7 @@ public class ProductJDBCTemplateDAO extends UgcNamingServiceDAO implements Produ
 	 		extractBlogList(product, loadOptions);
  		}	
  		if(isAnalyzeBlogListEnabled(loadOptions)){
-	 		// analyzeBlogList(product, loadOptions);
+	 		analyzeBlogList(product, loadOptions);
  		}
  		
 		

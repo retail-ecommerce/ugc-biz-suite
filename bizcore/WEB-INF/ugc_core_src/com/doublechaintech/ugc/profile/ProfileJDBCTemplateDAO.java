@@ -278,9 +278,10 @@ public class ProfileJDBCTemplateDAO extends UgcNamingServiceDAO implements Profi
  		return checkOptions(options,ProfileTokens.RATING_LIST);
  	}
  	protected boolean isAnalyzeRatingListEnabled(Map<String,Object> options){		
- 		return checkOptions(options,ProfileTokens.RATING_LIST+".analyze");
+ 		return true;
+ 		//return checkOptions(options,ProfileTokens.RATING_LIST+".analyze");
  	}
-
+	
 	protected boolean isSaveRatingListEnabled(Map<String,Object> options){
 		return checkOptions(options, ProfileTokens.RATING_LIST);
 		
@@ -292,9 +293,10 @@ public class ProfileJDBCTemplateDAO extends UgcNamingServiceDAO implements Profi
  		return checkOptions(options,ProfileTokens.REVIEW_LIST);
  	}
  	protected boolean isAnalyzeReviewListEnabled(Map<String,Object> options){		
- 		return checkOptions(options,ProfileTokens.REVIEW_LIST+".analyze");
+ 		return true;
+ 		//return checkOptions(options,ProfileTokens.REVIEW_LIST+".analyze");
  	}
-
+	
 	protected boolean isSaveReviewListEnabled(Map<String,Object> options){
 		return checkOptions(options, ProfileTokens.REVIEW_LIST);
 		
@@ -306,9 +308,10 @@ public class ProfileJDBCTemplateDAO extends UgcNamingServiceDAO implements Profi
  		return checkOptions(options,ProfileTokens.BLOG_LIST);
  	}
  	protected boolean isAnalyzeBlogListEnabled(Map<String,Object> options){		
- 		return checkOptions(options,ProfileTokens.BLOG_LIST+".analyze");
+ 		return true;
+ 		//return checkOptions(options,ProfileTokens.BLOG_LIST+".analyze");
  	}
-
+	
 	protected boolean isSaveBlogListEnabled(Map<String,Object> options){
 		return checkOptions(options, ProfileTokens.BLOG_LIST);
 		
@@ -350,7 +353,7 @@ public class ProfileJDBCTemplateDAO extends UgcNamingServiceDAO implements Profi
 	 		extractRatingList(profile, loadOptions);
  		}	
  		if(isAnalyzeRatingListEnabled(loadOptions)){
-	 		// analyzeRatingList(profile, loadOptions);
+	 		analyzeRatingList(profile, loadOptions);
  		}
  		
 		
@@ -358,7 +361,7 @@ public class ProfileJDBCTemplateDAO extends UgcNamingServiceDAO implements Profi
 	 		extractReviewList(profile, loadOptions);
  		}	
  		if(isAnalyzeReviewListEnabled(loadOptions)){
-	 		// analyzeReviewList(profile, loadOptions);
+	 		analyzeReviewList(profile, loadOptions);
  		}
  		
 		
@@ -366,7 +369,7 @@ public class ProfileJDBCTemplateDAO extends UgcNamingServiceDAO implements Profi
 	 		extractBlogList(profile, loadOptions);
  		}	
  		if(isAnalyzeBlogListEnabled(loadOptions)){
-	 		// analyzeBlogList(profile, loadOptions);
+	 		analyzeBlogList(profile, loadOptions);
  		}
  		
 		

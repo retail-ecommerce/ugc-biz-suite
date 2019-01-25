@@ -20,7 +20,7 @@ import DescriptionList from '../../components/DescriptionList';
 import ImagePreview from '../../components/ImagePreview';
 import GlobalComponents from '../../custcomponents';
 import DashboardTool from '../../common/Dashboard.tool'
-
+import appLocaleName from '../../common/Locale.tool'
 
 const {aggregateDataset,calcKey, defaultHideCloseTrans,
   defaultImageListOf,defaultSettingListOf,defaultBuildTransferModal,
@@ -79,18 +79,18 @@ const internalSummaryOf = (review,targetComponent) =>{
 	
 	
 	const {ReviewService} = GlobalComponents
-	
+	const userContext = null
 	return (
 	<DescriptionList className={styles.headerList} size="small" col="4">
 <Description term="Id">{review.id}</Description> 
 <Description term="Title">{review.title}</Description> 
-<Description term="User">{review.user==null?"未分配":review.user.displayName}
+<Description term="User">{review.user==null?appLocaleName(userContext,"NotAssigned"):review.user.displayName}
  <Icon type="swap" onClick={()=>
   showTransferModel(targetComponent,"User","profile",ReviewService.requestCandidateUser,
 	      ReviewService.transferToAnotherUser,"anotherUserId",review.user?review.user.id:"")} 
   style={{fontSize: 20,color:"red"}} />
 </Description>
-<Description term="Product">{review.product==null?"未分配":review.product.displayName}
+<Description term="Product">{review.product==null?appLocaleName(userContext,"NotAssigned"):review.product.displayName}
  <Icon type="swap" onClick={()=>
   showTransferModel(targetComponent,"Product","product",ReviewService.requestCandidateProduct,
 	      ReviewService.transferToAnotherProduct,"anotherProductId",review.product?review.product.id:"")} 
@@ -112,7 +112,7 @@ class ReviewDashboard extends Component {
     candidateReferenceList: {},
     candidateServiceName:"",
     candidateObjectType:"city",
-    targetLocalName:"城市",
+    targetLocalName:"",
     transferServiceName:"",
     currentValue:"",
     transferTargetParameterName:"",  
@@ -139,7 +139,6 @@ class ReviewDashboard extends Component {
     
       	],
   	};
-    //下面各个渲染方法都可以定制，只要在每个模型的里面的_features="custom"就可以得到定制的例子
     
     const renderExtraHeader = this.props.renderExtraHeader || internalRenderExtraHeader
     const settingListOf = this.props.settingListOf || internalSettingListOf
