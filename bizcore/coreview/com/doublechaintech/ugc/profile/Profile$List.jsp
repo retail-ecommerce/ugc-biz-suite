@@ -101,6 +101,9 @@
 <c:if test="${param.referName ne 'name'}">
 	<th>${userContext.localeMap['profile.name']}</th>
 </c:if>
+<c:if test="${param.referName ne 'mobile'}">
+	<th>${userContext.localeMap['profile.mobile']}</th>
+</c:if>
 <c:if test="${param.referName ne 'lastUpdateTime'}">
 	<th>${userContext.localeMap['profile.last_update_time']}</th>
 </c:if>
@@ -114,7 +117,8 @@
 			<c:forEach var="item" items="${profileList}">
 				<tr currentVersion='${item.version}' id="profile-${item.id}" ><td><a class="link-action-removed" href="./profileManager/view/${item.id}/"> ${item.id}</a></td>
 <c:if test="${param.referName ne 'name'}">	<td contenteditable='true' class='edit-value'  propertyToChange='name' storedCellValue='${item.name}' prefix='${ownerBeanName}Manager/updateProfile/${result.id}/${item.id}/'>${item.name}</td>
-</c:if><c:if test="${param.referName ne 'lastUpdateTime'}">	<td contenteditable='true' class='edit-value'  propertyToChange='lastUpdateTime' storedCellValue='${item.lastUpdateTime}' prefix='${ownerBeanName}Manager/updateProfile/${result.id}/${item.id}/'>${item.lastUpdateTime}</td>
+</c:if><c:if test="${param.referName ne 'mobile'}">	<td contenteditable='true' class='edit-value'  propertyToChange='mobile' storedCellValue='${item.maskedMobile}' prefix='${ownerBeanName}Manager/updateProfile/${result.id}/${item.id}/'>${item.maskedMobile}</td>
+</c:if><c:if test="${param.referName ne 'lastUpdateTime'}">	<td contenteditable='true' class='edit-value'  propertyToChange='lastUpdateTime' storedCellValue='${item.lastUpdateTime}' prefix='${ownerBeanName}Manager/updateProfile/${result.id}/${item.id}/'><fmt:formatDate pattern="yyyy-MM-dd'T'HH:mm:ss" value="${item.lastUpdateTime}" /></td>
 </c:if><c:if test="${param.referName ne 'platform'}">
 	<td class="select_candidate_td"
 			data-candidate-method="./profileManager/requestCandidatePlatform/${ownerBeanName}/${item.id}/"

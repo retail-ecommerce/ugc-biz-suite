@@ -19,15 +19,16 @@ public class ProfileTable{
 	static final String TABLE_NAME="profile_data";
 	static final String COLUMN_ID = "id";
 	static final String COLUMN_NAME = "name";
+	static final String COLUMN_MOBILE = "mobile";
 	static final String COLUMN_LAST_UPDATE_TIME = "last_update_time";
 	static final String COLUMN_PLATFORM = "platform";
 	static final String COLUMN_VERSION = "version";
  
 	static final String []ALL_CLOUMNS = {COLUMN_ID, 
-		COLUMN_NAME, COLUMN_LAST_UPDATE_TIME, COLUMN_PLATFORM, 
+		COLUMN_NAME, COLUMN_MOBILE, COLUMN_LAST_UPDATE_TIME, COLUMN_PLATFORM, 
 		COLUMN_VERSION};
 	static final String []NORMAL_CLOUMNS = {
-		COLUMN_NAME, COLUMN_LAST_UPDATE_TIME, COLUMN_PLATFORM
+		COLUMN_NAME, COLUMN_MOBILE, COLUMN_LAST_UPDATE_TIME, COLUMN_PLATFORM
 		};
 	
 	

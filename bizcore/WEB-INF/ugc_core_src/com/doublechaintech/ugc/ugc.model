@@ -16,7 +16,8 @@
 	
 	<profile
 		name="Philip Zhang|Naveen Kumar R |VENKATESH GADUPUTI"
-		last_update_time="updatTime()"
+		mobile="13988889999"
+		last_update_time="updateTime()"
 		platform="$(platform)"
 	/>
 	

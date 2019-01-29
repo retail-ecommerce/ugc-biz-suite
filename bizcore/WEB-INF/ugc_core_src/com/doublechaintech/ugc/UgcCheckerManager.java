@@ -105,11 +105,11 @@ public class UgcCheckerManager extends BaseManagerImpl {
 		
 	}	 			
 	
-	public static final String  LAST_UPDATE_TIME_OF_PROFILE ="profile.last_update_time";
-	protected void checkLastUpdateTimeOfProfile(UgcUserContext userContext, String lastUpdateTime, List<Message> messageList)
+	public static final String  MOBILE_OF_PROFILE ="profile.mobile";
+	protected void checkMobileOfProfile(UgcUserContext userContext, String mobile, List<Message> messageList)
 	{
 		
-	 	checkStringLengthRange(lastUpdateTime,3, 44,LAST_UPDATE_TIME_OF_PROFILE, messageList); 		
+	 	checkChinaMobilePhone(mobile,5, 44,MOBILE_OF_PROFILE, messageList); 		
 		
 	}	 			
 	

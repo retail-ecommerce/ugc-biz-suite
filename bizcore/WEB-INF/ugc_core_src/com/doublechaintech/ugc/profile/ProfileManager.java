@@ -12,7 +12,7 @@ public interface ProfileManager{
 
 		
 
-	public Profile createProfile(UgcUserContext userContext, String name, String lastUpdateTime, String platformId) throws Exception;	
+	public Profile createProfile(UgcUserContext userContext, String name, String mobile, String platformId) throws Exception;	
 	public Profile updateProfile(UgcUserContext userContext,String profileId, int profileVersion, String property, String newValueExpr,String [] tokensExpr) throws Exception;
 	public Profile loadProfile(UgcUserContext userContext, String profileId, String [] tokensExpr) throws Exception;
 	public Profile internalSaveProfile(UgcUserContext userContext, Profile profile) throws Exception;

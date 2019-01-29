@@ -166,6 +166,20 @@ public class PlatformForm extends BaseForm {
 	}
 
 
+	public PlatformForm mobileFieldForProfile(String parameterName, String initValue){
+		FormField field =  mobileFromProfile(parameterName, initValue);		
+		this.addFormField(field);
+		return this;
+	}
+	
+	public PlatformForm mobileFieldForProfile(String initValue){
+		return mobileFieldForProfile("mobile",initValue);
+	}
+	public PlatformForm mobileFieldForProfile(){
+		return mobileFieldForProfile("mobile","");
+	}
+
+
 	public PlatformForm lastUpdateTimeFieldForProfile(String parameterName, String initValue){
 		FormField field =  lastUpdateTimeFromProfile(parameterName, initValue);		
 		this.addFormField(field);

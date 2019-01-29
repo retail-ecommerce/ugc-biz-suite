@@ -22,6 +22,7 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 	
 	public static final String ID_PROPERTY                    = "id"                ;
 	public static final String NAME_PROPERTY                  = "name"              ;
+	public static final String MOBILE_PROPERTY                = "mobile"            ;
 	public static final String LAST_UPDATE_TIME_PROPERTY      = "lastUpdateTime"    ;
 	public static final String PLATFORM_PROPERTY              = "platform"          ;
 	public static final String VERSION_PROPERTY               = "version"           ;
@@ -51,7 +52,8 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 
 	protected		String              	mId                 ;
 	protected		String              	mName               ;
-	protected		String              	mLastUpdateTime     ;
+	protected		String              	mMobile             ;
+	protected		DateTime            	mLastUpdateTime     ;
 	protected		Platform            	mPlatform           ;
 	protected		int                 	mVersion            ;
 	
@@ -71,9 +73,10 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 		this.changed = true;
 	}
 	
-	public 	Profile(String name, String lastUpdateTime, Platform platform)
+	public 	Profile(String name, String mobile, DateTime lastUpdateTime, Platform platform)
 	{
 		setName(name);
+		setMobile(mobile);
 		setLastUpdateTime(lastUpdateTime);
 		setPlatform(platform);
 
@@ -88,6 +91,9 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
      	
 		if(NAME_PROPERTY.equals(property)){
 			changeNameProperty(newValueExpr);
+		}
+		if(MOBILE_PROPERTY.equals(property)){
+			changeMobileProperty(newValueExpr);
 		}
 		if(LAST_UPDATE_TIME_PROPERTY.equals(property)){
 			changeLastUpdateTimeProperty(newValueExpr);
@@ -112,10 +118,25 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 			
 			
 			
-	protected void changeLastUpdateTimeProperty(String newValueExpr){
-		String oldValue = getLastUpdateTime();
+	protected void changeMobileProperty(String newValueExpr){
+		String oldValue = getMobile();
 		String newValue = parseString(newValueExpr);
 		if(equalsString(oldValue , newValue)){
+			return;//they can be both null, or exact the same object, this is much faster than equals function
+		}
+		//they are surely different each other
+		updateMobile(newValue);
+		this.onChangeProperty(MOBILE_PROPERTY, oldValue, newValue);
+		return;
+  
+	}
+			
+			
+			
+	protected void changeLastUpdateTimeProperty(String newValueExpr){
+		DateTime oldValue = getLastUpdateTime();
+		DateTime newValue = parseTimestamp(newValueExpr);
+		if(equalsTimestamp(oldValue , newValue)){
 			return;//they can be both null, or exact the same object, this is much faster than equals function
 		}
 		//they are surely different each other
@@ -158,14 +179,34 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 	}
 	
 	
-	public void setLastUpdateTime(String lastUpdateTime){
-		this.mLastUpdateTime = trimString(lastUpdateTime);;
+	public void setMobile(String mobile){
+		this.mMobile = trimString(mobile);;
 	}
-	public String getLastUpdateTime(){
+	public String getMobile(){
+		return this.mMobile;
+	}
+	public Profile updateMobile(String mobile){
+		this.mMobile = trimString(mobile);;
+		this.changed = true;
+		return this;
+	}
+	
+	
+	
+	public String getMaskedMobile(){
+		String mobilePhoneNumber = getMobile();
+		return maskChinaMobileNumber(mobilePhoneNumber);
+	}
+	
+		
+	public void setLastUpdateTime(DateTime lastUpdateTime){
+		this.mLastUpdateTime = lastUpdateTime;;
+	}
+	public DateTime getLastUpdateTime(){
 		return this.mLastUpdateTime;
 	}
-	public Profile updateLastUpdateTime(String lastUpdateTime){
-		this.mLastUpdateTime = trimString(lastUpdateTime);;
+	public Profile updateLastUpdateTime(DateTime lastUpdateTime){
+		this.mLastUpdateTime = lastUpdateTime;;
 		this.changed = true;
 		return this;
 	}
@@ -531,6 +572,7 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 
 		appendKeyValuePair(result, ID_PROPERTY, getId());
 		appendKeyValuePair(result, NAME_PROPERTY, getName());
+		appendKeyValuePair(result, MOBILE_PROPERTY, getMaskedMobile());
 		appendKeyValuePair(result, LAST_UPDATE_TIME_PROPERTY, getLastUpdateTime());
 		appendKeyValuePair(result, PLATFORM_PROPERTY, getPlatform());
 		appendKeyValuePair(result, VERSION_PROPERTY, getVersion());
@@ -565,6 +607,7 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 		
 			dest.setId(getId());
 			dest.setName(getName());
+			dest.setMobile(getMobile());
 			dest.setLastUpdateTime(getLastUpdateTime());
 			dest.setPlatform(getPlatform());
 			dest.setVersion(getVersion());
@@ -583,6 +626,7 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 		stringBuilder.append("Profile{");
 		stringBuilder.append("\tid='"+getId()+"';");
 		stringBuilder.append("\tname='"+getName()+"';");
+		stringBuilder.append("\tmobile='"+getMobile()+"';");
 		stringBuilder.append("\tlastUpdateTime='"+getLastUpdateTime()+"';");
 		if(getPlatform() != null ){
  			stringBuilder.append("\tplatform='Platform("+getPlatform().getId()+")';");

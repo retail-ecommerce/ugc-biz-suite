@@ -135,6 +135,20 @@ public class BlogForm extends BaseForm {
 	}
 
 
+	public BlogForm mobileFieldOfProfile(String parameterName, String initValue){
+		FormField field =  mobileFromProfile(parameterName, initValue);
+		this.addFormField(field);	
+		return this;
+	}
+	
+	public BlogForm mobileFieldOfProfile(String initValue){
+		return mobileFieldOfProfile("mobile",initValue);
+	}
+	public BlogForm mobileFieldOfProfile(){
+		return mobileFieldOfProfile("mobile","");
+	}
+
+
 	public BlogForm lastUpdateTimeFieldOfProfile(String parameterName, String initValue){
 		FormField field =  lastUpdateTimeFromProfile(parameterName, initValue);
 		this.addFormField(field);	

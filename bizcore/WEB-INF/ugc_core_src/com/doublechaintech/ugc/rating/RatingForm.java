@@ -121,6 +121,20 @@ public class RatingForm extends BaseForm {
 	}
 
 
+	public RatingForm mobileFieldOfProfile(String parameterName, String initValue){
+		FormField field =  mobileFromProfile(parameterName, initValue);
+		this.addFormField(field);	
+		return this;
+	}
+	
+	public RatingForm mobileFieldOfProfile(String initValue){
+		return mobileFieldOfProfile("mobile",initValue);
+	}
+	public RatingForm mobileFieldOfProfile(){
+		return mobileFieldOfProfile("mobile","");
+	}
+
+
 	public RatingForm lastUpdateTimeFieldOfProfile(String parameterName, String initValue){
 		FormField field =  lastUpdateTimeFromProfile(parameterName, initValue);
 		this.addFormField(field);	

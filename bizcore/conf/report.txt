@@ -3,7 +3,7 @@
 
 
 
-=================Execute Report (Model Time 190109T2342) @Sat Jan 26 00:01:00 CST 2019, 19 objects and 141 fields===========================
+=================Execute Report (Model Time 190129T1149) @Tue Jan 29 11:49:55 CST 2019, 19 objects and 142 fields===========================
 
 
 
@@ -105,10 +105,11 @@ product{
 } depth=1; isRoot = false
 
 profile{
-	fields(5){
+	fields(6){
 		string	id('ABCDEFGIJK000001'), verb: false, required: true;
 		string	name('Philip Zhang|Naveen Kumar R |VENKATESH GADUPUTI'), verb: false, required: true;
-		string	last_update_time('updatTime()'), verb: false, required: true;
+		string_china_mobile_phone	mobile('13988889999'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
 		platform	platform('$(object)'), verb: false, required: true, referenceBy: profileList;
 		int	version('2147483647'), verb: false, required: true;
 	}
@@ -190,10 +191,11 @@ product{
 } depth=1; isRoot = false
 
 profile{
-	fields(5){
+	fields(6){
 		string	id('ABCDEFGIJK000001'), verb: false, required: true;
 		string	name('Philip Zhang|Naveen Kumar R |VENKATESH GADUPUTI'), verb: false, required: true;
-		string	last_update_time('updatTime()'), verb: false, required: true;
+		string_china_mobile_phone	mobile('13988889999'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
 		platform	platform('$(object)'), verb: false, required: true, referenceBy: profileList;
 		int	version('2147483647'), verb: false, required: true;
 	}
@@ -457,11 +459,3 @@ form_action{
 
 
 =================================End Report=================================
-
-
-
-
-
-
-
-

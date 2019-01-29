@@ -14,6 +14,7 @@ public class ProfileMapper extends BaseRowMapper<Profile>{
 		 		
  		setId(profile, rs, rowNumber); 		
  		setName(profile, rs, rowNumber); 		
+ 		setMobile(profile, rs, rowNumber); 		
  		setLastUpdateTime(profile, rs, rowNumber); 		
  		setPlatform(profile, rs, rowNumber); 		
  		setVersion(profile, rs, rowNumber);
@@ -49,16 +50,28 @@ public class ProfileMapper extends BaseRowMapper<Profile>{
 		profile.setName(name);
 	}
 		
+	protected void setMobile(Profile profile, ResultSet rs, int rowNumber) throws SQLException{
+	
+		//there will be issue when the type is double/int/long
+		String mobile = rs.getString(ProfileTable.COLUMN_MOBILE);
+		if(mobile == null){
+			//do nothing when nothing found in database
+			return;
+		}
+		
+		profile.setMobile(mobile);
+	}
+		
 	protected void setLastUpdateTime(Profile profile, ResultSet rs, int rowNumber) throws SQLException{
 	
 		//there will be issue when the type is double/int/long
-		String lastUpdateTime = rs.getString(ProfileTable.COLUMN_LAST_UPDATE_TIME);
+		Date lastUpdateTime = rs.getTimestamp(ProfileTable.COLUMN_LAST_UPDATE_TIME);
 		if(lastUpdateTime == null){
 			//do nothing when nothing found in database
 			return;
 		}
 		
-		profile.setLastUpdateTime(lastUpdateTime);
+		profile.setLastUpdateTime(convertToDateTime(lastUpdateTime));
 	}
 		 		
  	protected void setPlatform(Profile profile, ResultSet rs, int rowNumber) throws SQLException{

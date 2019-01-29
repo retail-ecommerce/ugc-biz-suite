@@ -617,7 +617,7 @@ public class PlatformManagerImpl extends CustomUgcCheckerManager implements Plat
 
 
 
-	protected void checkParamsForAddingProfile(UgcUserContext userContext, String platformId, String name, String lastUpdateTime,String [] tokensExpr) throws Exception{
+	protected void checkParamsForAddingProfile(UgcUserContext userContext, String platformId, String name, String mobile,String [] tokensExpr) throws Exception{
 		
 		
 
@@ -628,18 +628,18 @@ public class PlatformManagerImpl extends CustomUgcCheckerManager implements Plat
 		
 		userContext.getChecker().checkNameOfProfile(name);
 		
-		userContext.getChecker().checkLastUpdateTimeOfProfile(lastUpdateTime);
+		userContext.getChecker().checkMobileOfProfile(mobile);
 	
 		userContext.getChecker().throwExceptionIfHasErrors(PlatformManagerException.class);
 
 	
 	}
-	public  Platform addProfile(UgcUserContext userContext, String platformId, String name, String lastUpdateTime, String [] tokensExpr) throws Exception
+	public  Platform addProfile(UgcUserContext userContext, String platformId, String name, String mobile, String [] tokensExpr) throws Exception
 	{	
 		
-		checkParamsForAddingProfile(userContext,platformId,name, lastUpdateTime,tokensExpr);
+		checkParamsForAddingProfile(userContext,platformId,name, mobile,tokensExpr);
 		
-		Profile profile = createProfile(userContext,name, lastUpdateTime);
+		Profile profile = createProfile(userContext,name, mobile);
 		
 		Platform platform = loadPlatform(userContext, platformId, allTokens());
 		synchronized(platform){ 
@@ -652,20 +652,20 @@ public class PlatformManagerImpl extends CustomUgcCheckerManager implements Plat
 			return present(userContext,platform, mergedAllTokens(tokensExpr));
 		}
 	}
-	protected void checkParamsForUpdatingProfileProperties(UgcUserContext userContext, String platformId,String id,String name,String lastUpdateTime,String [] tokensExpr) throws Exception {
+	protected void checkParamsForUpdatingProfileProperties(UgcUserContext userContext, String platformId,String id,String name,String mobile,String [] tokensExpr) throws Exception {
 		
 		userContext.getChecker().checkIdOfPlatform(platformId);
 		userContext.getChecker().checkIdOfProfile(id);
 		
 		userContext.getChecker().checkNameOfProfile( name);
-		userContext.getChecker().checkLastUpdateTimeOfProfile( lastUpdateTime);
+		userContext.getChecker().checkMobileOfProfile( mobile);
 
 		userContext.getChecker().throwExceptionIfHasErrors(PlatformManagerException.class);
 		
 	}
-	public  Platform updateProfileProperties(UgcUserContext userContext, String platformId, String id,String name,String lastUpdateTime, String [] tokensExpr) throws Exception
+	public  Platform updateProfileProperties(UgcUserContext userContext, String platformId, String id,String name,String mobile, String [] tokensExpr) throws Exception
 	{	
-		checkParamsForUpdatingProfileProperties(userContext,platformId,id,name,lastUpdateTime,tokensExpr);
+		checkParamsForUpdatingProfileProperties(userContext,platformId,id,name,mobile,tokensExpr);
 
 		Map<String, Object> options = tokens()
 				.allTokens()
@@ -681,7 +681,7 @@ public class PlatformManagerImpl extends CustomUgcCheckerManager implements Plat
 		Profile item = platformToUpdate.getProfileList().first();
 		
 		item.updateName( name );
-		item.updateLastUpdateTime( lastUpdateTime );
+		item.updateMobile( mobile );
 
 		
 		//checkParamsForAddingProfile(userContext,platformId,name, code, used,tokensExpr);
@@ -692,13 +692,14 @@ public class PlatformManagerImpl extends CustomUgcCheckerManager implements Plat
 	}
 	
 	
-	protected Profile createProfile(UgcUserContext userContext, String name, String lastUpdateTime) throws Exception{
+	protected Profile createProfile(UgcUserContext userContext, String name, String mobile) throws Exception{
 
 		Profile profile = new Profile();
 		
 		
 		profile.setName(name);		
-		profile.setLastUpdateTime(lastUpdateTime);
+		profile.setMobile(mobile);		
+		profile.setLastUpdateTime(userContext.now());
 	
 		
 		return profile;
@@ -790,7 +791,7 @@ public class PlatformManagerImpl extends CustomUgcCheckerManager implements Plat
 			//Will be good when the platform loaded from this JVM process cache.
 			//Also good when there is a RAM based DAO implementation
 			
-			
+			profile.updateLastUpdateTime(userContext.now());
 			
 			platform.copyProfileFrom( profile );		
 			platform = savePlatform(userContext, platform, tokens().withProfileList().done());
@@ -814,8 +815,8 @@ public class PlatformManagerImpl extends CustomUgcCheckerManager implements Plat
 			userContext.getChecker().checkNameOfProfile(parseString(newValueExpr));
 		}
 		
-		if(Profile.LAST_UPDATE_TIME_PROPERTY.equals(property)){
-			userContext.getChecker().checkLastUpdateTimeOfProfile(parseString(newValueExpr));
+		if(Profile.MOBILE_PROPERTY.equals(property)){
+			userContext.getChecker().checkMobileOfProfile(parseString(newValueExpr));
 		}
 		
 	
@@ -847,7 +848,7 @@ public class PlatformManagerImpl extends CustomUgcCheckerManager implements Plat
 			}
 			
 			profile.changeProperty(property, newValueExpr);
-			
+			profile.updateLastUpdateTime(userContext.now());
 			platform = savePlatform(userContext, platform, tokens().withProfileList().done());
 			return present(userContext,platform, mergedAllTokens(tokensExpr));
 		}

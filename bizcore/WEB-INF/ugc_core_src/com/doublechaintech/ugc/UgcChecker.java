@@ -131,11 +131,11 @@ public class UgcChecker extends BaseChecker{
 		return this;
 	}	 			
 
-	public static final String  LAST_UPDATE_TIME_OF_PROFILE ="profile.last_update_time";
-	public UgcChecker checkLastUpdateTimeOfProfile(String lastUpdateTime)
+	public static final String  MOBILE_OF_PROFILE ="profile.mobile";
+	public UgcChecker checkMobileOfProfile(String mobile)
 	{
 		
-	 	checkStringLengthRange(lastUpdateTime,3, 44,LAST_UPDATE_TIME_OF_PROFILE ); 		
+	 	checkChinaMobilePhone(mobile,5, 44,MOBILE_OF_PROFILE ); 		
 		
 		return this;
 	}	 			

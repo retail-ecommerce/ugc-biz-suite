@@ -48,6 +48,20 @@ public class ProfileForm extends BaseForm {
 	}
 
 
+	public ProfileForm mobileField(String parameterName, String initValue){
+		FormField field = mobileFromProfile(parameterName, initValue);		
+		this.addFormField(field);
+		return this;
+	}
+	
+	public ProfileForm mobileField(String initValue){
+		return mobileField("mobile",initValue);
+	}
+	public ProfileForm mobileField(){
+		return mobileField("mobile","");
+	}
+
+
 	public ProfileForm lastUpdateTimeField(String parameterName, String initValue){
 		FormField field = lastUpdateTimeFromProfile(parameterName, initValue);		
 		this.addFormField(field);

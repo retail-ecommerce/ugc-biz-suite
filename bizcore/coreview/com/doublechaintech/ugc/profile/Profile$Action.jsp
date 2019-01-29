@@ -19,7 +19,8 @@
 	
 	<li><span>${userContext.localeMap['profile.id']}</span> ${profile.id}</li>
 <li><span>${userContext.localeMap['profile.name']}</span> ${profile.name}</li>
-<li><span>${userContext.localeMap['profile.last_update_time']}</span> ${profile.lastUpdateTime}</li>
+<li><span>${userContext.localeMap['profile.mobile']}</span> ${profile.maskedMobile}</li>
+<li><span>${userContext.localeMap['profile.last_update_time']}</span> <fmt:formatDate pattern="yyyy-MM-dd" value="${profile.lastUpdateTime}" /></li>
 
 	
 	</ul>

@@ -570,6 +570,22 @@ public class ProfileJDBCTemplateDAO extends UgcNamingServiceDAO implements Profi
 		if(resultList==null){
 			return;//do nothing when the list is null.
 		}
+		
+ 		MultipleAccessKey filterKey = new MultipleAccessKey();
+ 		filterKey.put(Profile.PLATFORM_PROPERTY, platformId);
+ 		Map<String,Object> emptyOptions = new HashMap<String,Object>();
+ 		
+ 		StatsInfo info = new StatsInfo();
+ 		
+ 
+		StatsItem lastUpdateTimeStatsItem = new StatsItem();
+		//Profile.LAST_UPDATE_TIME_PROPERTY
+		lastUpdateTimeStatsItem.setDisplayName("Profile");
+		lastUpdateTimeStatsItem.setInternalName(formatKeyForDateLine(Profile.LAST_UPDATE_TIME_PROPERTY));
+		lastUpdateTimeStatsItem.setResult(statsWithGroup(DateKey.class,wrapWithDate(Profile.LAST_UPDATE_TIME_PROPERTY),filterKey,emptyOptions));
+		info.addItem(lastUpdateTimeStatsItem);
+ 				
+ 		resultList.setStatsInfo(info);
 
  	
  		
@@ -726,30 +742,32 @@ public class ProfileJDBCTemplateDAO extends UgcNamingServiceDAO implements Profi
  		return prepareProfileCreateParameters(profile);
  	}
  	protected Object[] prepareProfileUpdateParameters(Profile profile){
- 		Object[] parameters = new Object[6];
+ 		Object[] parameters = new Object[7];
  
  		parameters[0] = profile.getName();
- 		parameters[1] = profile.getLastUpdateTime(); 	
+ 		parameters[1] = profile.getMobile();
+ 		parameters[2] = profile.getLastUpdateTime(); 	
  		if(profile.getPlatform() != null){
- 			parameters[2] = profile.getPlatform().getId();
+ 			parameters[3] = profile.getPlatform().getId();
  		}
  		
- 		parameters[3] = profile.nextVersion();
- 		parameters[4] = profile.getId();
- 		parameters[5] = profile.getVersion();
+ 		parameters[4] = profile.nextVersion();
+ 		parameters[5] = profile.getId();
+ 		parameters[6] = profile.getVersion();
  				
  		return parameters;
  	}
  	protected Object[] prepareProfileCreateParameters(Profile profile){
-		Object[] parameters = new Object[4];
+		Object[] parameters = new Object[5];
 		String newProfileId=getNextId();
 		profile.setId(newProfileId);
 		parameters[0] =  profile.getId();
  
  		parameters[1] = profile.getName();
- 		parameters[2] = profile.getLastUpdateTime(); 	
+ 		parameters[2] = profile.getMobile();
+ 		parameters[3] = profile.getLastUpdateTime(); 	
  		if(profile.getPlatform() != null){
- 			parameters[3] = profile.getPlatform().getId();
+ 			parameters[4] = profile.getPlatform().getId();
  		
  		}
  				

@@ -135,6 +135,20 @@ public class ReviewForm extends BaseForm {
 	}
 
 
+	public ReviewForm mobileFieldOfProfile(String parameterName, String initValue){
+		FormField field =  mobileFromProfile(parameterName, initValue);
+		this.addFormField(field);	
+		return this;
+	}
+	
+	public ReviewForm mobileFieldOfProfile(String initValue){
+		return mobileFieldOfProfile("mobile",initValue);
+	}
+	public ReviewForm mobileFieldOfProfile(){
+		return mobileFieldOfProfile("mobile","");
+	}
+
+
 	public ReviewForm lastUpdateTimeFieldOfProfile(String parameterName, String initValue){
 		FormField field =  lastUpdateTimeFromProfile(parameterName, initValue);
 		this.addFormField(field);	
