@@ -51,7 +51,7 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 
 	protected		String              	mId                 ;
 	protected		String              	mName               ;
-	protected		String              	mLastUpdateTime     ;
+	protected		DateTime            	mLastUpdateTime     ;
 	protected		Platform            	mPlatform           ;
 	protected		int                 	mVersion            ;
 	
@@ -71,7 +71,7 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 		this.changed = true;
 	}
 	
-	public 	Profile(String name, String lastUpdateTime, Platform platform)
+	public 	Profile(String name, DateTime lastUpdateTime, Platform platform)
 	{
 		setName(name);
 		setLastUpdateTime(lastUpdateTime);
@@ -113,9 +113,9 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 			
 			
 	protected void changeLastUpdateTimeProperty(String newValueExpr){
-		String oldValue = getLastUpdateTime();
-		String newValue = parseString(newValueExpr);
-		if(equalsString(oldValue , newValue)){
+		DateTime oldValue = getLastUpdateTime();
+		DateTime newValue = parseTimestamp(newValueExpr);
+		if(equalsTimestamp(oldValue , newValue)){
 			return;//they can be both null, or exact the same object, this is much faster than equals function
 		}
 		//they are surely different each other
@@ -158,14 +158,14 @@ public class Profile extends BaseEntity implements  java.io.Serializable{
 	}
 	
 	
-	public void setLastUpdateTime(String lastUpdateTime){
-		this.mLastUpdateTime = trimString(lastUpdateTime);;
+	public void setLastUpdateTime(DateTime lastUpdateTime){
+		this.mLastUpdateTime = lastUpdateTime;;
 	}
-	public String getLastUpdateTime(){
+	public DateTime getLastUpdateTime(){
 		return this.mLastUpdateTime;
 	}
-	public Profile updateLastUpdateTime(String lastUpdateTime){
-		this.mLastUpdateTime = trimString(lastUpdateTime);;
+	public Profile updateLastUpdateTime(DateTime lastUpdateTime){
+		this.mLastUpdateTime = lastUpdateTime;;
 		this.changed = true;
 		return this;
 	}

@@ -570,6 +570,22 @@ public class ProfileJDBCTemplateDAO extends UgcNamingServiceDAO implements Profi
 		if(resultList==null){
 			return;//do nothing when the list is null.
 		}
+		
+ 		MultipleAccessKey filterKey = new MultipleAccessKey();
+ 		filterKey.put(Profile.PLATFORM_PROPERTY, platformId);
+ 		Map<String,Object> emptyOptions = new HashMap<String,Object>();
+ 		
+ 		StatsInfo info = new StatsInfo();
+ 		
+ 
+		StatsItem lastUpdateTimeStatsItem = new StatsItem();
+		//Profile.LAST_UPDATE_TIME_PROPERTY
+		lastUpdateTimeStatsItem.setDisplayName("Profile");
+		lastUpdateTimeStatsItem.setInternalName(formatKeyForDateLine(Profile.LAST_UPDATE_TIME_PROPERTY));
+		lastUpdateTimeStatsItem.setResult(statsWithGroup(DateKey.class,wrapWithDate(Profile.LAST_UPDATE_TIME_PROPERTY),filterKey,emptyOptions));
+		info.addItem(lastUpdateTimeStatsItem);
+ 				
+ 		resultList.setStatsInfo(info);
 
  	
  		

@@ -21,7 +21,7 @@
 	
 	<li><span>ID</span><a class="link-action-removed" href="./profileManager/view/${profile.id}/"> ${profile.id}</a></li>
 <li><span>${userContext.localeMap['profile.name']}</span> ${profile.name}</li>
-<li><span>${userContext.localeMap['profile.last_update_time']}</span> ${profile.lastUpdateTime}</li>
+<li><span>${userContext.localeMap['profile.last_update_time']}</span> <fmt:formatDate pattern="yyyy-MM-dd" value="${profile.lastUpdateTime}" /></li>
 
 	
 	</ul>

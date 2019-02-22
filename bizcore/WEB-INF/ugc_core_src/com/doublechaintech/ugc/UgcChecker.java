@@ -131,15 +131,6 @@ public class UgcChecker extends BaseChecker{
 		return this;
 	}	 			
 
-	public static final String  LAST_UPDATE_TIME_OF_PROFILE ="profile.last_update_time";
-	public UgcChecker checkLastUpdateTimeOfProfile(String lastUpdateTime)
-	{
-		
-	 	checkStringLengthRange(lastUpdateTime,3, 44,LAST_UPDATE_TIME_OF_PROFILE ); 		
-		
-		return this;
-	}	 			
-
 	public static final String  PLATFORM_OF_PROFILE ="profile.platform";
 	public UgcChecker checkPlatformIdOfProfile(String platformId)
 	{

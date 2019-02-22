@@ -3,7 +3,7 @@
 
 
 
-=================Execute Report (Model Time 190109T2342) @Sat Jan 26 00:01:00 CST 2019, 19 objects and 141 fields===========================
+=================Execute Report (Model Time 190129T1230) @Fri Feb 22 12:22:42 CST 2019, 19 objects and 141 fields===========================
 
 
 
@@ -108,7 +108,7 @@ profile{
 	fields(5){
 		string	id('ABCDEFGIJK000001'), verb: false, required: true;
 		string	name('Philip Zhang|Naveen Kumar R |VENKATESH GADUPUTI'), verb: false, required: true;
-		string	last_update_time('updatTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
 		platform	platform('$(object)'), verb: false, required: true, referenceBy: profileList;
 		int	version('2147483647'), verb: false, required: true;
 	}
@@ -193,7 +193,7 @@ profile{
 	fields(5){
 		string	id('ABCDEFGIJK000001'), verb: false, required: true;
 		string	name('Philip Zhang|Naveen Kumar R |VENKATESH GADUPUTI'), verb: false, required: true;
-		string	last_update_time('updatTime()'), verb: false, required: true;
+		date_time_update	last_update_time('updateTime()'), verb: false, required: true;
 		platform	platform('$(object)'), verb: false, required: true, referenceBy: profileList;
 		int	version('2147483647'), verb: false, required: true;
 	}
@@ -457,6 +457,9 @@ form_action{
 
 
 =================================End Report=================================
+
+
+
 
 
 

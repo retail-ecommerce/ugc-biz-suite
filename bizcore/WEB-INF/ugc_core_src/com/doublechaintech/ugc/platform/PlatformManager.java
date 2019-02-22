@@ -37,9 +37,9 @@ public interface PlatformManager{
 
 	*/
 
-	//public  ProfileManager getProfileManager(UgcUserContext userContext, String platformId, String name, String lastUpdateTime ,String [] tokensExpr)  throws Exception;
+	//public  ProfileManager getProfileManager(UgcUserContext userContext, String platformId, String name ,String [] tokensExpr)  throws Exception;
 	
-	public  Platform addProfile(UgcUserContext userContext, String platformId, String name, String lastUpdateTime , String [] tokensExpr)  throws Exception;
+	public  Platform addProfile(UgcUserContext userContext, String platformId, String name , String [] tokensExpr)  throws Exception;
 	public  Platform removeProfile(UgcUserContext userContext, String platformId, String profileId, int profileVersion,String [] tokensExpr)  throws Exception;
 	public  Platform updateProfile(UgcUserContext userContext, String platformId, String profileId, int profileVersion, String property, String newValueExpr,String [] tokensExpr)  throws Exception;
 

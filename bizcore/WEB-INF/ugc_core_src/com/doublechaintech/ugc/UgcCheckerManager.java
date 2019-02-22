@@ -105,14 +105,6 @@ public class UgcCheckerManager extends BaseManagerImpl {
 		
 	}	 			
 	
-	public static final String  LAST_UPDATE_TIME_OF_PROFILE ="profile.last_update_time";
-	protected void checkLastUpdateTimeOfProfile(UgcUserContext userContext, String lastUpdateTime, List<Message> messageList)
-	{
-		
-	 	checkStringLengthRange(lastUpdateTime,3, 44,LAST_UPDATE_TIME_OF_PROFILE, messageList); 		
-		
-	}	 			
-	
 	public static final String  PLATFORM_OF_PROFILE ="profile.platform";
 	protected void checkPlatformIdOfProfile(UgcUserContext userContext, String platformId, List<Message> messageList)
 	{

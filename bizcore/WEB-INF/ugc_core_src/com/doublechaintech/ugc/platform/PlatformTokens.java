@@ -181,7 +181,7 @@ public class PlatformTokens extends CommonTokens{
 	}
 	
 	public PlatformTokens searchAllTextOfProfileList(String verb, String value){	
-		String field = "id|name|lastUpdateTime";
+		String field = "id|name";
 		addSearchMoreOptions(PROFILE_LIST,profileListSearchCounter++, field, verb, value);
 		return this;
 	}

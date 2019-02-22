@@ -178,7 +178,7 @@ public class ProfileManagerImpl extends CustomUgcCheckerManager implements Profi
  	
 
 
-	public Profile createProfile(UgcUserContext userContext,String name, String lastUpdateTime, String platformId) throws Exception
+	public Profile createProfile(UgcUserContext userContext,String name, String platformId) throws Exception
 	{
 		
 		
@@ -186,7 +186,6 @@ public class ProfileManagerImpl extends CustomUgcCheckerManager implements Profi
 		
 
 		userContext.getChecker().checkNameOfProfile(name);
-		userContext.getChecker().checkLastUpdateTimeOfProfile(lastUpdateTime);
 	
 		userContext.getChecker().throwExceptionIfHasErrors(ProfileManagerException.class);
 
@@ -194,7 +193,7 @@ public class ProfileManagerImpl extends CustomUgcCheckerManager implements Profi
 		Profile profile=createNewProfile();	
 
 		profile.setName(name);
-		profile.setLastUpdateTime(lastUpdateTime);
+		profile.setLastUpdateTime(userContext.now());
 			
 		Platform platform = loadPlatform(userContext, platformId,emptyOptions());
 		profile.setPlatform(platform);
@@ -226,9 +225,6 @@ public class ProfileManagerImpl extends CustomUgcCheckerManager implements Profi
 
 		if(Profile.NAME_PROPERTY.equals(property)){
 			userContext.getChecker().checkNameOfProfile(parseString(newValueExpr));
-		}
-		if(Profile.LAST_UPDATE_TIME_PROPERTY.equals(property)){
-			userContext.getChecker().checkLastUpdateTimeOfProfile(parseString(newValueExpr));
 		}		
 
 		
@@ -283,7 +279,7 @@ public class ProfileManagerImpl extends CustomUgcCheckerManager implements Profi
 			//will be good when the profile loaded from this JVM process cache.
 			//also good when there is a ram based DAO implementation
 			//make changes to Profile.
-			
+			profile.updateLastUpdateTime(userContext.now());
 			profile.changeProperty(property, newValueExpr);
 			profile = saveProfile(userContext, profile, tokens().done());
 			return present(userContext,profile, mergedAllTokens(tokensExpr));
@@ -307,7 +303,7 @@ public class ProfileManagerImpl extends CustomUgcCheckerManager implements Profi
 			//make changes to Profile.
 			
 			profile.changeProperty(property, newValueExpr);
-			
+			profile.updateLastUpdateTime(userContext.now());
 			profile = saveProfile(userContext, profile, tokens().done());
 			return present(userContext,profile, mergedAllTokens(tokensExpr));
 			//return saveProfile(userContext, profile, tokens().done());

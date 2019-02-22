@@ -9,7 +9,7 @@
 	<bean id="checker" class="com.doublechaintech.ugc.UgcChecker" scope="prototype"></bean>
 
 	<bean id="platformManagerBase" class="com.doublechaintech.ugc.platform.PlatformManagerImpl"/>
-	<bean id="platformManager" class="com.doublechaintech.ugc.platform.PlatformManagerImpl" parent="platformManagerBase" ></bean>
+	<bean id="platformManager" class="com.doublechaintech.ugc.platform.PlatformCustomManagerImpl" parent="platformManagerBase" ></bean>
 	
 	<bean id="productManagerBase" class="com.doublechaintech.ugc.product.ProductManagerImpl"/>
 	<bean id="productManager" class="com.doublechaintech.ugc.product.ProductCustomManagerImpl" parent="productManagerBase" ></bean>
@@ -27,19 +27,19 @@
 	<bean id="blogManager" class="com.doublechaintech.ugc.blog.BlogManagerImpl" parent="blogManagerBase" ></bean>
 	
 	<bean id="userDomainManagerBase" class="com.doublechaintech.ugc.userdomain.UserDomainManagerImpl"/>
-	<bean id="userDomainManager" class="com.doublechaintech.ugc.userdomain.UserDomainManagerImpl" parent="userDomainManagerBase" ></bean>
+	<bean id="userDomainManager" class="com.doublechaintech.ugc.userdomain.UserDomainCustomManagerImpl" parent="userDomainManagerBase" ></bean>
 	
 	<bean id="userWhiteListManagerBase" class="com.doublechaintech.ugc.userwhitelist.UserWhiteListManagerImpl"/>
 	<bean id="userWhiteListManager" class="com.doublechaintech.ugc.userwhitelist.UserWhiteListManagerImpl" parent="userWhiteListManagerBase" ></bean>
 	
 	<bean id="secUserManagerBase" class="com.doublechaintech.ugc.secuser.SecUserManagerImpl"/>
-	<bean id="secUserManager" class="com.doublechaintech.ugc.secuser.SecUserManagerImpl" parent="secUserManagerBase" ></bean>
+	<bean id="secUserManager" class="com.doublechaintech.ugc.secuser.SecUserCustomManagerImpl" parent="secUserManagerBase" ></bean>
 	
 	<bean id="secUserBlockingManagerBase" class="com.doublechaintech.ugc.secuserblocking.SecUserBlockingManagerImpl"/>
-	<bean id="secUserBlockingManager" class="com.doublechaintech.ugc.secuserblocking.SecUserBlockingManagerImpl" parent="secUserBlockingManagerBase" ></bean>
+	<bean id="secUserBlockingManager" class="com.doublechaintech.ugc.secuserblocking.SecUserBlockingCustomManagerImpl" parent="secUserBlockingManagerBase" ></bean>
 	
 	<bean id="userAppManagerBase" class="com.doublechaintech.ugc.userapp.UserAppManagerImpl"/>
-	<bean id="userAppManager" class="com.doublechaintech.ugc.userapp.UserAppManagerImpl" parent="userAppManagerBase" ></bean>
+	<bean id="userAppManager" class="com.doublechaintech.ugc.userapp.UserAppCustomManagerImpl" parent="userAppManagerBase" ></bean>
 	
 	<bean id="listAccessManagerBase" class="com.doublechaintech.ugc.listaccess.ListAccessManagerImpl"/>
 	<bean id="listAccessManager" class="com.doublechaintech.ugc.listaccess.ListAccessManagerImpl" parent="listAccessManagerBase" ></bean>

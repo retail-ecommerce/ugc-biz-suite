@@ -52,13 +52,13 @@ public class ProfileMapper extends BaseRowMapper<Profile>{
 	protected void setLastUpdateTime(Profile profile, ResultSet rs, int rowNumber) throws SQLException{
 	
 		//there will be issue when the type is double/int/long
-		String lastUpdateTime = rs.getString(ProfileTable.COLUMN_LAST_UPDATE_TIME);
+		Date lastUpdateTime = rs.getTimestamp(ProfileTable.COLUMN_LAST_UPDATE_TIME);
 		if(lastUpdateTime == null){
 			//do nothing when nothing found in database
 			return;
 		}
 		
-		profile.setLastUpdateTime(lastUpdateTime);
+		profile.setLastUpdateTime(convertToDateTime(lastUpdateTime));
 	}
 		 		
  	protected void setPlatform(Profile profile, ResultSet rs, int rowNumber) throws SQLException{
