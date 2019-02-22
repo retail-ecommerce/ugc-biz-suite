@@ -249,58 +249,45 @@ create table form_action_data (
 insert into platform_data values ('P000001','Chain eComerce Platform','new generation of eCommerce platform based on opensource and modern tech','V1.0','1');
 
 	
-insert into product_data values ('P000001','A beautiful jean','P000001','4.18','1');
-insert into product_data values ('P000002','A beautiful jean0002','P000001','3.53','1');
-insert into product_data values ('P000003','A beautiful jean0003','P000002','4.12','1');
-insert into product_data values ('P000004','A beautiful jean0004','P000002','3.61','1');
-insert into product_data values ('P000005','A beautiful jean0005','P000003','4.37','1');
-insert into product_data values ('P000006','A beautiful jean0006','P000003','4.30','1');
+insert into product_data values ('P000001','A beautiful jean','P000001','4.39','1');
+insert into product_data values ('P000002','A beautiful jean0002','P000001','3.56','1');
+insert into product_data values ('P000003','A beautiful jean0003','P000002','3.92','1');
+insert into product_data values ('P000004','A beautiful jean0004','P000002','3.48','1');
+insert into product_data values ('P000005','A beautiful jean0005','P000003','4.49','1');
 
 	
-insert into profile_data values ('P000001','Philip Zhang','2019-02-18 07:04:44','P000001','1');
-insert into profile_data values ('P000002','Naveen Kumar R ','2019-02-17 14:44:52','P000001','1');
-insert into profile_data values ('P000003','VENKATESH GADUPUTI','2019-02-02 23:06:42','P000001','1');
-insert into profile_data values ('P000004','Philip Zhang','2019-02-17 07:26:20','P000002','1');
-insert into profile_data values ('P000005','Naveen Kumar R ','2019-02-06 17:55:47','P000002','1');
-insert into profile_data values ('P000006','VENKATESH GADUPUTI','2019-02-15 06:45:53','P000002','1');
+insert into profile_data values ('P000001','Philip Zhang','2019-02-11 12:48:04','P000001','1');
+insert into profile_data values ('P000002','Naveen Kumar R ','2019-02-14 06:08:21','P000001','1');
+insert into profile_data values ('P000003','VENKATESH GADUPUTI','2019-02-14 18:15:33','P000001','1');
+insert into profile_data values ('P000004','Philip Zhang','2019-02-19 14:38:26','P000002','1');
+insert into profile_data values ('P000005','Naveen Kumar R ','2019-02-17 00:50:40','P000002','1');
 
 	
-insert into rating_data values ('R000001','P000001','P000001','1','2019-02-02 13:48:24','1');
-insert into rating_data values ('R000002','P000001','P000001','2','2019-02-12 21:26:38','1');
-insert into rating_data values ('R000003','P000002','P000002','3','2019-02-05 02:22:03','1');
-insert into rating_data values ('R000004','P000003','P000002','4','2019-02-10 15:10:27','1');
-insert into rating_data values ('R000005','P000004','P000003','5','2019-02-19 06:55:30','1');
-insert into rating_data values ('R000006','P000004','P000003','1','2019-02-16 10:55:35','1');
-insert into rating_data values ('R000007','P000005','P000004','2','2019-02-21 18:27:00','1');
-insert into rating_data values ('R000008','P000006','P000004','3','2019-02-19 08:45:06','1');
-insert into rating_data values ('R000009','P000007','P000005','4','2019-02-19 15:00:43','1');
-insert into rating_data values ('R000010','P000007','P000005','5','2019-02-01 08:43:01','1');
-insert into rating_data values ('R000011','P000008','P000006','1','2019-02-15 04:06:05','1');
-insert into rating_data values ('R000012','P000009','P000006','2','2019-02-03 04:20:06','1');
-insert into rating_data values ('R000013','P000010','P000007','3','2019-02-15 06:50:13','1');
-insert into rating_data values ('R000014','P000010','P000007','4','2019-02-19 20:15:46','1');
-insert into rating_data values ('R000015','P000011','P000008','5','2019-02-20 17:32:10','1');
-insert into rating_data values ('R000016','P000012','P000008','1','2019-02-04 10:53:52','1');
-insert into rating_data values ('R000017','P000013','P000009','2','2019-02-15 17:39:47','1');
-insert into rating_data values ('R000018','P000013','P000009','3','2019-02-21 00:20:31','1');
-insert into rating_data values ('R000019','P000014','P000010','4','2019-02-21 01:18:14','1');
-insert into rating_data values ('R000020','P000015','P000010','5','2019-02-21 19:21:28','1');
-insert into rating_data values ('R000021','P000016','P000011','1','2019-02-01 00:36:31','1');
-insert into rating_data values ('R000022','P000016','P000011','2','2019-02-10 21:15:23','1');
-insert into rating_data values ('R000023','P000017','P000012','3','2019-02-16 17:30:39','1');
-insert into rating_data values ('R000024','P000018','P000012','4','2019-02-13 12:59:39','1');
-insert into rating_data values ('R000025','P000019','P000013','5','2019-02-05 14:11:28','1');
-insert into rating_data values ('R000026','P000019','P000013','1','2019-02-03 06:05:40','1');
-insert into rating_data values ('R000027','P000020','P000014','2','2019-02-10 09:43:10','1');
-insert into rating_data values ('R000028','P000021','P000014','3','2019-02-07 22:30:48','1');
-insert into rating_data values ('R000029','P000022','P000015','4','2019-02-22 02:33:16','1');
-insert into rating_data values ('R000030','P000022','P000015','5','2019-02-22 07:22:41','1');
-insert into rating_data values ('R000031','P000023','P000016','1','2019-02-19 15:42:33','1');
-insert into rating_data values ('R000032','P000024','P000016','2','2019-02-15 07:53:09','1');
-insert into rating_data values ('R000033','P000025','P000017','3','2019-02-14 03:25:37','1');
-insert into rating_data values ('R000034','P000025','P000017','4','2019-02-06 18:39:37','1');
-insert into rating_data values ('R000035','P000026','P000018','5','2019-02-10 19:05:29','1');
-insert into rating_data values ('R000036','P000027','P000018','1','2019-02-21 06:29:22','1');
+insert into rating_data values ('R000001','P000001','P000001','1','2019-02-06 09:12:39','1');
+insert into rating_data values ('R000002','P000001','P000001','2','2019-02-17 08:45:31','1');
+insert into rating_data values ('R000003','P000002','P000002','3','2019-02-08 17:07:11','1');
+insert into rating_data values ('R000004','P000003','P000002','4','2019-02-12 04:10:29','1');
+insert into rating_data values ('R000005','P000004','P000003','5','2019-02-19 05:20:37','1');
+insert into rating_data values ('R000006','P000004','P000003','1','2019-02-12 17:10:00','1');
+insert into rating_data values ('R000007','P000005','P000004','2','2019-02-20 15:59:14','1');
+insert into rating_data values ('R000008','P000006','P000004','3','2019-02-17 05:07:35','1');
+insert into rating_data values ('R000009','P000007','P000005','4','2019-02-04 16:06:00','1');
+insert into rating_data values ('R000010','P000007','P000005','5','2019-02-14 02:09:39','1');
+insert into rating_data values ('R000011','P000008','P000006','1','2019-02-21 00:55:06','1');
+insert into rating_data values ('R000012','P000009','P000006','2','2019-02-17 03:44:26','1');
+insert into rating_data values ('R000013','P000010','P000007','3','2019-02-01 22:26:29','1');
+insert into rating_data values ('R000014','P000010','P000007','4','2019-02-03 18:29:10','1');
+insert into rating_data values ('R000015','P000011','P000008','5','2019-02-18 08:49:45','1');
+insert into rating_data values ('R000016','P000012','P000008','1','2019-02-10 02:22:34','1');
+insert into rating_data values ('R000017','P000013','P000009','2','2019-02-10 09:34:03','1');
+insert into rating_data values ('R000018','P000013','P000009','3','2019-02-06 00:31:24','1');
+insert into rating_data values ('R000019','P000014','P000010','4','2019-02-11 08:02:38','1');
+insert into rating_data values ('R000020','P000015','P000010','5','2019-02-18 12:29:37','1');
+insert into rating_data values ('R000021','P000016','P000011','1','2019-02-20 18:02:48','1');
+insert into rating_data values ('R000022','P000016','P000011','2','2019-02-03 18:31:44','1');
+insert into rating_data values ('R000023','P000017','P000012','3','2019-02-07 15:36:35','1');
+insert into rating_data values ('R000024','P000018','P000012','4','2019-02-11 02:47:47','1');
+insert into rating_data values ('R000025','P000019','P000013','5','2019-02-16 21:38:46','1');
 
 	
 insert into review_data values ('R000001','Credit Card','    一段样例文字。
@@ -308,217 +295,151 @@ insert into review_data values ('R000001','Credit Card','    一段样例文字�
 
 可以空行。
 
-','P000001','P000001','2019-02-06 06:31:14','1');
+','P000001','P000001','2019-02-11 00:16:19','1');
 insert into review_data values ('R000002','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000001','P000001','2019-02-21 10:24:08','1');
+','P000001','P000001','2019-01-31 19:08:07','1');
 insert into review_data values ('R000003','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000002','P000002','2019-01-31 18:41:23','1');
+','P000002','P000002','2019-02-08 16:46:33','1');
 insert into review_data values ('R000004','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000003','P000002','2019-02-19 02:13:29','1');
+','P000003','P000002','2019-02-21 12:25:39','1');
 insert into review_data values ('R000005','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000004','P000003','2019-02-07 11:28:27','1');
+','P000004','P000003','2019-02-15 06:07:07','1');
 insert into review_data values ('R000006','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000004','P000003','2019-02-11 00:58:11','1');
+','P000004','P000003','2019-02-06 06:51:25','1');
 insert into review_data values ('R000007','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000005','P000004','2019-02-18 07:51:34','1');
+','P000005','P000004','2019-02-07 20:54:09','1');
 insert into review_data values ('R000008','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000006','P000004','2019-02-18 03:07:56','1');
+','P000006','P000004','2019-02-18 03:11:03','1');
 insert into review_data values ('R000009','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000007','P000005','2019-02-09 18:45:45','1');
+','P000007','P000005','2019-02-10 14:28:36','1');
 insert into review_data values ('R000010','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000007','P000005','2019-02-11 15:11:56','1');
+','P000007','P000005','2019-02-07 03:41:52','1');
 insert into review_data values ('R000011','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000008','P000006','2019-02-10 03:29:34','1');
+','P000008','P000006','2019-02-06 11:01:17','1');
 insert into review_data values ('R000012','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000009','P000006','2019-02-22 01:37:34','1');
+','P000009','P000006','2019-02-03 04:54:36','1');
 insert into review_data values ('R000013','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000010','P000007','2019-02-21 10:01:39','1');
+','P000010','P000007','2019-02-02 22:28:59','1');
 insert into review_data values ('R000014','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000010','P000007','2019-01-31 17:08:20','1');
+','P000010','P000007','2019-02-12 05:16:19','1');
 insert into review_data values ('R000015','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000011','P000008','2019-02-06 08:46:09','1');
+','P000011','P000008','2019-02-11 16:44:43','1');
 insert into review_data values ('R000016','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000012','P000008','2019-02-22 09:22:03','1');
+','P000012','P000008','2019-02-13 05:56:24','1');
 insert into review_data values ('R000017','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000013','P000009','2019-02-06 10:27:52','1');
+','P000013','P000009','2019-02-20 11:31:53','1');
 insert into review_data values ('R000018','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000013','P000009','2019-02-13 15:50:33','1');
+','P000013','P000009','2019-02-10 07:17:46','1');
 insert into review_data values ('R000019','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000014','P000010','2019-02-01 15:31:28','1');
+','P000014','P000010','2019-02-10 19:25:03','1');
 insert into review_data values ('R000020','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000015','P000010','2019-02-07 09:38:08','1');
+','P000015','P000010','2019-02-05 06:28:41','1');
 insert into review_data values ('R000021','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000016','P000011','2019-02-16 17:34:38','1');
+','P000016','P000011','2019-02-16 23:03:02','1');
 insert into review_data values ('R000022','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000016','P000011','2019-02-18 12:41:08','1');
+','P000016','P000011','2019-02-08 01:30:12','1');
 insert into review_data values ('R000023','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000017','P000012','2019-02-20 23:29:04','1');
+','P000017','P000012','2019-02-02 03:17:38','1');
 insert into review_data values ('R000024','GiftCard','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000018','P000012','2019-01-31 21:01:09','1');
+','P000018','P000012','2019-02-09 00:13:23','1');
 insert into review_data values ('R000025','Credit Card','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000019','P000013','2019-02-10 03:02:24','1');
-insert into review_data values ('R000026','GiftCard','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000019','P000013','2019-02-12 04:00:07','1');
-insert into review_data values ('R000027','Credit Card','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000020','P000014','2019-02-21 04:04:07','1');
-insert into review_data values ('R000028','GiftCard','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000021','P000014','2019-02-19 02:55:37','1');
-insert into review_data values ('R000029','Credit Card','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000022','P000015','2019-02-02 17:56:30','1');
-insert into review_data values ('R000030','GiftCard','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000022','P000015','2019-01-31 18:41:13','1');
-insert into review_data values ('R000031','Credit Card','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000023','P000016','2019-02-02 20:29:35','1');
-insert into review_data values ('R000032','GiftCard','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000024','P000016','2019-02-08 23:50:23','1');
-insert into review_data values ('R000033','Credit Card','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000025','P000017','2019-02-13 06:45:16','1');
-insert into review_data values ('R000034','GiftCard','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000025','P000017','2019-02-01 23:10:44','1');
-insert into review_data values ('R000035','Credit Card','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000026','P000018','2019-02-17 01:24:36','1');
-insert into review_data values ('R000036','GiftCard','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000027','P000018','2019-02-17 12:32:42','1');
+','P000019','P000013','2019-02-08 18:31:00','1');
 
 	
 insert into blog_data values ('B000001','a consumer order','    一段样例文字。
@@ -526,217 +447,151 @@ insert into blog_data values ('B000001','a consumer order','    一段样例文�
 
 可以空行。
 
-','P000001','P000001','2019-02-12 23:33:53','1');
+','P000001','P000001','2019-02-13 05:19:01','1');
 insert into blog_data values ('B000002','a consumer order0002','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000001','P000001','2019-02-03 15:32:19','1');
+','P000001','P000001','2019-02-16 17:37:17','1');
 insert into blog_data values ('B000003','a consumer order0003','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000002','P000002','2019-02-10 05:11:46','1');
+','P000002','P000002','2019-02-02 00:31:29','1');
 insert into blog_data values ('B000004','a consumer order0004','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000003','P000002','2019-02-17 01:40:14','1');
+','P000003','P000002','2019-02-02 08:32:46','1');
 insert into blog_data values ('B000005','a consumer order0005','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000004','P000003','2019-02-17 10:12:37','1');
+','P000004','P000003','2019-02-17 06:25:38','1');
 insert into blog_data values ('B000006','a consumer order0006','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000004','P000003','2019-02-11 06:33:30','1');
+','P000004','P000003','2019-02-21 09:37:24','1');
 insert into blog_data values ('B000007','a consumer order0007','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000005','P000004','2019-02-04 22:09:41','1');
+','P000005','P000004','2019-02-09 11:33:08','1');
 insert into blog_data values ('B000008','a consumer order0008','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000006','P000004','2019-02-12 06:00:34','1');
+','P000006','P000004','2019-02-02 18:43:38','1');
 insert into blog_data values ('B000009','a consumer order0009','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000007','P000005','2019-02-03 17:37:27','1');
+','P000007','P000005','2019-02-19 06:13:13','1');
 insert into blog_data values ('B000010','a consumer order0010','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000007','P000005','2019-02-10 11:23:18','1');
+','P000007','P000005','2019-02-13 03:04:31','1');
 insert into blog_data values ('B000011','a consumer order0011','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000008','P000006','2019-02-11 16:04:17','1');
+','P000008','P000006','2019-02-13 18:07:50','1');
 insert into blog_data values ('B000012','a consumer order0012','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000009','P000006','2019-02-15 23:26:30','1');
+','P000009','P000006','2019-02-21 06:34:35','1');
 insert into blog_data values ('B000013','a consumer order0013','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000010','P000007','2019-02-21 11:14:11','1');
+','P000010','P000007','2019-02-03 00:08:55','1');
 insert into blog_data values ('B000014','a consumer order0014','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000010','P000007','2019-02-06 13:14:18','1');
+','P000010','P000007','2019-02-02 11:20:30','1');
 insert into blog_data values ('B000015','a consumer order0015','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000011','P000008','2019-02-10 06:47:15','1');
+','P000011','P000008','2019-02-09 20:47:33','1');
 insert into blog_data values ('B000016','a consumer order0016','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000012','P000008','2019-02-12 06:05:39','1');
+','P000012','P000008','2019-02-07 11:27:32','1');
 insert into blog_data values ('B000017','a consumer order0017','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000013','P000009','2019-02-14 19:35:14','1');
+','P000013','P000009','2019-02-15 05:47:30','1');
 insert into blog_data values ('B000018','a consumer order0018','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000013','P000009','2019-02-04 18:30:15','1');
+','P000013','P000009','2019-02-20 03:27:32','1');
 insert into blog_data values ('B000019','a consumer order0019','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000014','P000010','2019-02-22 01:00:11','1');
+','P000014','P000010','2019-02-05 07:13:37','1');
 insert into blog_data values ('B000020','a consumer order0020','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000015','P000010','2019-02-20 14:08:10','1');
+','P000015','P000010','2019-02-21 07:29:29','1');
 insert into blog_data values ('B000021','a consumer order0021','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000016','P000011','2019-02-13 23:55:11','1');
+','P000016','P000011','2019-02-19 10:08:08','1');
 insert into blog_data values ('B000022','a consumer order0022','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000016','P000011','2019-02-05 03:24:17','1');
+','P000016','P000011','2019-02-14 23:06:05','1');
 insert into blog_data values ('B000023','a consumer order0023','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000017','P000012','2019-02-06 10:18:42','1');
+','P000017','P000012','2019-02-16 19:38:18','1');
 insert into blog_data values ('B000024','a consumer order0024','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000018','P000012','2019-02-16 03:06:01','1');
+','P000018','P000012','2019-02-21 13:32:50','1');
 insert into blog_data values ('B000025','a consumer order0025','    一段样例文字。
 可以分段。
 
 可以空行。
 
-','P000019','P000013','2019-02-17 07:03:17','1');
-insert into blog_data values ('B000026','a consumer order0026','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000019','P000013','2019-02-13 18:14:44','1');
-insert into blog_data values ('B000027','a consumer order0027','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000020','P000014','2019-02-02 00:03:57','1');
-insert into blog_data values ('B000028','a consumer order0028','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000021','P000014','2019-02-11 04:37:25','1');
-insert into blog_data values ('B000029','a consumer order0029','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000022','P000015','2019-02-21 07:55:30','1');
-insert into blog_data values ('B000030','a consumer order0030','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000022','P000015','2019-02-04 15:36:53','1');
-insert into blog_data values ('B000031','a consumer order0031','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000023','P000016','2019-02-04 15:48:01','1');
-insert into blog_data values ('B000032','a consumer order0032','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000024','P000016','2019-02-09 01:38:07','1');
-insert into blog_data values ('B000033','a consumer order0033','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000025','P000017','2019-02-17 09:20:12','1');
-insert into blog_data values ('B000034','a consumer order0034','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000025','P000017','2019-02-07 21:30:06','1');
-insert into blog_data values ('B000035','a consumer order0035','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000026','P000018','2019-02-20 18:51:20','1');
-insert into blog_data values ('B000036','a consumer order0036','    一段样例文字。
-可以分段。
-
-可以空行。
-
-','P000027','P000018','2019-02-11 17:53:24','1');
+','P000019','P000013','2019-02-11 10:07:00','1');
 
 	
 insert into user_domain_data values ('UD000001','用户区域','1');
@@ -747,18 +602,16 @@ insert into user_white_list_data values ('UWL000002','13808188512','tester;ios-s
 insert into user_white_list_data values ('UWL000003','clariones','tester;ios-spokesperson0003','UD000002','1');
 insert into user_white_list_data values ('UWL000004','13808188512','tester;ios-spokesperson0004','UD000002','1');
 insert into user_white_list_data values ('UWL000005','clariones','tester;ios-spokesperson0005','UD000003','1');
-insert into user_white_list_data values ('UWL000006','13808188512','tester;ios-spokesperson0006','UD000003','1');
 
 	
-insert into sec_user_data values ('SU000001','login','13900000001','','C183EC89F92A462CF45B95504792EC4625E847C90536EEFE512D1C9DB8602E95','0','2019-02-05 18:26:04','2019-02-22 10:21:27','UD000001',NULL,'BLOCKED','1');
-insert into sec_user_data values ('SU000002','login0002','13900000002','suddy_chang@163.com','AC2F95628244C6975EB2C36942EA879ED93D93F5895EF3157733E4629FA86B92','9999999','2019-02-21 11:36:47','2019-02-03 19:06:58','UD000001',NULL,'BLOCKED0002','1');
-insert into sec_user_data values ('SU000003','login0003','13900000003','','1A39AE05E011CF4B6ADE19307698831F4303CEB3FF5A9E21EEC0B21FB19B1050','0','2019-02-05 15:35:53','2019-02-07 04:27:53','UD000002',NULL,'BLOCKED0003','1');
-insert into sec_user_data values ('SU000004','login0004','13900000004','suddy_chang@163.com','331D0B81C261072AB3E01D2D09A3D1F9B03F1E5F095D6BF7284F32BF85135D59','9999999','2019-02-04 05:27:28','2019-02-05 15:46:08','UD000002',NULL,'BLOCKED0004','1');
-insert into sec_user_data values ('SU000005','login0005','13900000005','','CBDC109937F570CA1D5F223EC59F5368AF9380F9DBF7E553124132BB402ED457','0','2019-02-05 05:39:31','2019-02-18 09:03:12','UD000003',NULL,'BLOCKED0005','1');
-insert into sec_user_data values ('SU000006','login0006','13900000006','suddy_chang@163.com','69A610F10CE3333E0767CAEEB075A88B6B63E286F8BEBB9271C3EA6DF0CB2F7B','9999999','2019-02-03 08:24:45','2019-02-15 01:24:39','UD000003',NULL,'BLOCKED0006','1');
+insert into sec_user_data values ('SU000001','login','13900000001','','C183EC89F92A462CF45B95504792EC4625E847C90536EEFE512D1C9DB8602E95','0','2019-02-09 16:13:07','2019-02-02 04:48:58','UD000001',NULL,'BLOCKED','1');
+insert into sec_user_data values ('SU000002','login0002','13900000002','suddy_chang@163.com','AC2F95628244C6975EB2C36942EA879ED93D93F5895EF3157733E4629FA86B92','9999999','2019-02-18 20:07:09','2019-02-01 03:06:30','UD000001',NULL,'BLOCKED0002','1');
+insert into sec_user_data values ('SU000003','login0003','13900000003','','1A39AE05E011CF4B6ADE19307698831F4303CEB3FF5A9E21EEC0B21FB19B1050','0','2019-02-19 14:38:08','2019-02-13 12:42:31','UD000002',NULL,'BLOCKED0003','1');
+insert into sec_user_data values ('SU000004','login0004','13900000004','suddy_chang@163.com','331D0B81C261072AB3E01D2D09A3D1F9B03F1E5F095D6BF7284F32BF85135D59','9999999','2019-02-04 09:32:31','2019-02-19 15:35:07','UD000002',NULL,'BLOCKED0004','1');
+insert into sec_user_data values ('SU000005','login0005','13900000005','','CBDC109937F570CA1D5F223EC59F5368AF9380F9DBF7E553124132BB402ED457','0','2019-02-18 01:07:08','2019-02-06 02:24:28','UD000003',NULL,'BLOCKED0005','1');
 
 	
-insert into sec_user_blocking_data values ('SUB000001','currentUser()','2019-02-02 23:48:53','这个用户多次发送违反社区的帖子，现在把他给屏蔽了','1');
+insert into sec_user_blocking_data values ('SUB000001','currentUser()','2019-02-16 18:45:29','这个用户多次发送违反社区的帖子，现在把他给屏蔽了','1');
 
 	
 insert into user_app_data values ('UA000001','审车平台','SU000001','users',1,'MXWR','CarInspectionPlatform','CIP000001','/link/to/app','1');
@@ -786,17 +639,6 @@ insert into user_app_data values ('UA000022','审车公司','SU000008','bar-char
 insert into user_app_data values ('UA000023','维修公司','SU000008','user',1,'MXWR','CarRepairingServiceCompany','CRSC000001','/link/to/app0023','1');
 insert into user_app_data values ('UA000024','顾客','SU000008','users',1,'MXWR','CustomerInfo','CI000001','/link/to/app0024','1');
 insert into user_app_data values ('UA000025','审车平台','SU000009','users',1,'MXWR','CarInspectionPlatform','CIP000001','/link/to/app0025','1');
-insert into user_app_data values ('UA000026','账户管理','SU000009','bank',1,'MXWR','UserDomain','UD000001','/link/to/app0026','1');
-insert into user_app_data values ('UA000027','接车公司','SU000009','wechat',1,'MXWR','CarReceivingServiceCompany','CRSC000001','/link/to/app0027','1');
-insert into user_app_data values ('UA000028','审车公司','SU000010','bar-chart',1,'MXWR','CarInspectionServiceCompany','CISC000001','/link/to/app0028','1');
-insert into user_app_data values ('UA000029','维修公司','SU000010','user',1,'MXWR','CarRepairingServiceCompany','CRSC000001','/link/to/app0029','1');
-insert into user_app_data values ('UA000030','顾客','SU000010','users',1,'MXWR','CustomerInfo','CI000001','/link/to/app0030','1');
-insert into user_app_data values ('UA000031','审车平台','SU000011','users',1,'MXWR','CarInspectionPlatform','CIP000001','/link/to/app0031','1');
-insert into user_app_data values ('UA000032','账户管理','SU000011','bank',1,'MXWR','UserDomain','UD000001','/link/to/app0032','1');
-insert into user_app_data values ('UA000033','接车公司','SU000011','wechat',1,'MXWR','CarReceivingServiceCompany','CRSC000001','/link/to/app0033','1');
-insert into user_app_data values ('UA000034','审车公司','SU000012','bar-chart',1,'MXWR','CarInspectionServiceCompany','CISC000001','/link/to/app0034','1');
-insert into user_app_data values ('UA000035','维修公司','SU000012','user',1,'MXWR','CarRepairingServiceCompany','CRSC000001','/link/to/app0035','1');
-insert into user_app_data values ('UA000036','顾客','SU000012','users',1,'MXWR','CustomerInfo','CI000001','/link/to/app0036','1');
 
 	
 insert into list_access_data values ('LA000001','列表','levelOneCategoryList',1,1,1,1,1,'UA000001','1');
@@ -924,97 +766,6 @@ insert into list_access_data values ('LA000122','列表0122','levelOneCategoryLi
 insert into list_access_data values ('LA000123','列表0123','levelOneCategoryList0123',1,1,1,1,1,'UA000092','1');
 insert into list_access_data values ('LA000124','列表0124','levelOneCategoryList0124',1,1,1,1,1,'UA000093','1');
 insert into list_access_data values ('LA000125','列表0125','levelOneCategoryList0125',1,1,1,1,1,'UA000094','1');
-insert into list_access_data values ('LA000126','列表0126','levelOneCategoryList0126',1,1,1,1,1,'UA000094','1');
-insert into list_access_data values ('LA000127','列表0127','levelOneCategoryList0127',1,1,1,1,1,'UA000095','1');
-insert into list_access_data values ('LA000128','列表0128','levelOneCategoryList0128',1,1,1,1,1,'UA000096','1');
-insert into list_access_data values ('LA000129','列表0129','levelOneCategoryList0129',1,1,1,1,1,'UA000097','1');
-insert into list_access_data values ('LA000130','列表0130','levelOneCategoryList0130',1,1,1,1,1,'UA000097','1');
-insert into list_access_data values ('LA000131','列表0131','levelOneCategoryList0131',1,1,1,1,1,'UA000098','1');
-insert into list_access_data values ('LA000132','列表0132','levelOneCategoryList0132',1,1,1,1,1,'UA000099','1');
-insert into list_access_data values ('LA000133','列表0133','levelOneCategoryList0133',1,1,1,1,1,'UA000100','1');
-insert into list_access_data values ('LA000134','列表0134','levelOneCategoryList0134',1,1,1,1,1,'UA000100','1');
-insert into list_access_data values ('LA000135','列表0135','levelOneCategoryList0135',1,1,1,1,1,'UA000101','1');
-insert into list_access_data values ('LA000136','列表0136','levelOneCategoryList0136',1,1,1,1,1,'UA000102','1');
-insert into list_access_data values ('LA000137','列表0137','levelOneCategoryList0137',1,1,1,1,1,'UA000103','1');
-insert into list_access_data values ('LA000138','列表0138','levelOneCategoryList0138',1,1,1,1,1,'UA000103','1');
-insert into list_access_data values ('LA000139','列表0139','levelOneCategoryList0139',1,1,1,1,1,'UA000104','1');
-insert into list_access_data values ('LA000140','列表0140','levelOneCategoryList0140',1,1,1,1,1,'UA000105','1');
-insert into list_access_data values ('LA000141','列表0141','levelOneCategoryList0141',1,1,1,1,1,'UA000106','1');
-insert into list_access_data values ('LA000142','列表0142','levelOneCategoryList0142',1,1,1,1,1,'UA000106','1');
-insert into list_access_data values ('LA000143','列表0143','levelOneCategoryList0143',1,1,1,1,1,'UA000107','1');
-insert into list_access_data values ('LA000144','列表0144','levelOneCategoryList0144',1,1,1,1,1,'UA000108','1');
-insert into list_access_data values ('LA000145','列表0145','levelOneCategoryList0145',1,1,1,1,1,'UA000109','1');
-insert into list_access_data values ('LA000146','列表0146','levelOneCategoryList0146',1,1,1,1,1,'UA000109','1');
-insert into list_access_data values ('LA000147','列表0147','levelOneCategoryList0147',1,1,1,1,1,'UA000110','1');
-insert into list_access_data values ('LA000148','列表0148','levelOneCategoryList0148',1,1,1,1,1,'UA000111','1');
-insert into list_access_data values ('LA000149','列表0149','levelOneCategoryList0149',1,1,1,1,1,'UA000112','1');
-insert into list_access_data values ('LA000150','列表0150','levelOneCategoryList0150',1,1,1,1,1,'UA000112','1');
-insert into list_access_data values ('LA000151','列表0151','levelOneCategoryList0151',1,1,1,1,1,'UA000113','1');
-insert into list_access_data values ('LA000152','列表0152','levelOneCategoryList0152',1,1,1,1,1,'UA000114','1');
-insert into list_access_data values ('LA000153','列表0153','levelOneCategoryList0153',1,1,1,1,1,'UA000115','1');
-insert into list_access_data values ('LA000154','列表0154','levelOneCategoryList0154',1,1,1,1,1,'UA000115','1');
-insert into list_access_data values ('LA000155','列表0155','levelOneCategoryList0155',1,1,1,1,1,'UA000116','1');
-insert into list_access_data values ('LA000156','列表0156','levelOneCategoryList0156',1,1,1,1,1,'UA000117','1');
-insert into list_access_data values ('LA000157','列表0157','levelOneCategoryList0157',1,1,1,1,1,'UA000118','1');
-insert into list_access_data values ('LA000158','列表0158','levelOneCategoryList0158',1,1,1,1,1,'UA000118','1');
-insert into list_access_data values ('LA000159','列表0159','levelOneCategoryList0159',1,1,1,1,1,'UA000119','1');
-insert into list_access_data values ('LA000160','列表0160','levelOneCategoryList0160',1,1,1,1,1,'UA000120','1');
-insert into list_access_data values ('LA000161','列表0161','levelOneCategoryList0161',1,1,1,1,1,'UA000121','1');
-insert into list_access_data values ('LA000162','列表0162','levelOneCategoryList0162',1,1,1,1,1,'UA000121','1');
-insert into list_access_data values ('LA000163','列表0163','levelOneCategoryList0163',1,1,1,1,1,'UA000122','1');
-insert into list_access_data values ('LA000164','列表0164','levelOneCategoryList0164',1,1,1,1,1,'UA000123','1');
-insert into list_access_data values ('LA000165','列表0165','levelOneCategoryList0165',1,1,1,1,1,'UA000124','1');
-insert into list_access_data values ('LA000166','列表0166','levelOneCategoryList0166',1,1,1,1,1,'UA000124','1');
-insert into list_access_data values ('LA000167','列表0167','levelOneCategoryList0167',1,1,1,1,1,'UA000125','1');
-insert into list_access_data values ('LA000168','列表0168','levelOneCategoryList0168',1,1,1,1,1,'UA000126','1');
-insert into list_access_data values ('LA000169','列表0169','levelOneCategoryList0169',1,1,1,1,1,'UA000127','1');
-insert into list_access_data values ('LA000170','列表0170','levelOneCategoryList0170',1,1,1,1,1,'UA000127','1');
-insert into list_access_data values ('LA000171','列表0171','levelOneCategoryList0171',1,1,1,1,1,'UA000128','1');
-insert into list_access_data values ('LA000172','列表0172','levelOneCategoryList0172',1,1,1,1,1,'UA000129','1');
-insert into list_access_data values ('LA000173','列表0173','levelOneCategoryList0173',1,1,1,1,1,'UA000130','1');
-insert into list_access_data values ('LA000174','列表0174','levelOneCategoryList0174',1,1,1,1,1,'UA000130','1');
-insert into list_access_data values ('LA000175','列表0175','levelOneCategoryList0175',1,1,1,1,1,'UA000131','1');
-insert into list_access_data values ('LA000176','列表0176','levelOneCategoryList0176',1,1,1,1,1,'UA000132','1');
-insert into list_access_data values ('LA000177','列表0177','levelOneCategoryList0177',1,1,1,1,1,'UA000133','1');
-insert into list_access_data values ('LA000178','列表0178','levelOneCategoryList0178',1,1,1,1,1,'UA000133','1');
-insert into list_access_data values ('LA000179','列表0179','levelOneCategoryList0179',1,1,1,1,1,'UA000134','1');
-insert into list_access_data values ('LA000180','列表0180','levelOneCategoryList0180',1,1,1,1,1,'UA000135','1');
-insert into list_access_data values ('LA000181','列表0181','levelOneCategoryList0181',1,1,1,1,1,'UA000136','1');
-insert into list_access_data values ('LA000182','列表0182','levelOneCategoryList0182',1,1,1,1,1,'UA000136','1');
-insert into list_access_data values ('LA000183','列表0183','levelOneCategoryList0183',1,1,1,1,1,'UA000137','1');
-insert into list_access_data values ('LA000184','列表0184','levelOneCategoryList0184',1,1,1,1,1,'UA000138','1');
-insert into list_access_data values ('LA000185','列表0185','levelOneCategoryList0185',1,1,1,1,1,'UA000139','1');
-insert into list_access_data values ('LA000186','列表0186','levelOneCategoryList0186',1,1,1,1,1,'UA000139','1');
-insert into list_access_data values ('LA000187','列表0187','levelOneCategoryList0187',1,1,1,1,1,'UA000140','1');
-insert into list_access_data values ('LA000188','列表0188','levelOneCategoryList0188',1,1,1,1,1,'UA000141','1');
-insert into list_access_data values ('LA000189','列表0189','levelOneCategoryList0189',1,1,1,1,1,'UA000142','1');
-insert into list_access_data values ('LA000190','列表0190','levelOneCategoryList0190',1,1,1,1,1,'UA000142','1');
-insert into list_access_data values ('LA000191','列表0191','levelOneCategoryList0191',1,1,1,1,1,'UA000143','1');
-insert into list_access_data values ('LA000192','列表0192','levelOneCategoryList0192',1,1,1,1,1,'UA000144','1');
-insert into list_access_data values ('LA000193','列表0193','levelOneCategoryList0193',1,1,1,1,1,'UA000145','1');
-insert into list_access_data values ('LA000194','列表0194','levelOneCategoryList0194',1,1,1,1,1,'UA000145','1');
-insert into list_access_data values ('LA000195','列表0195','levelOneCategoryList0195',1,1,1,1,1,'UA000146','1');
-insert into list_access_data values ('LA000196','列表0196','levelOneCategoryList0196',1,1,1,1,1,'UA000147','1');
-insert into list_access_data values ('LA000197','列表0197','levelOneCategoryList0197',1,1,1,1,1,'UA000148','1');
-insert into list_access_data values ('LA000198','列表0198','levelOneCategoryList0198',1,1,1,1,1,'UA000148','1');
-insert into list_access_data values ('LA000199','列表0199','levelOneCategoryList0199',1,1,1,1,1,'UA000149','1');
-insert into list_access_data values ('LA000200','列表0200','levelOneCategoryList0200',1,1,1,1,1,'UA000150','1');
-insert into list_access_data values ('LA000201','列表0201','levelOneCategoryList0201',1,1,1,1,1,'UA000151','1');
-insert into list_access_data values ('LA000202','列表0202','levelOneCategoryList0202',1,1,1,1,1,'UA000151','1');
-insert into list_access_data values ('LA000203','列表0203','levelOneCategoryList0203',1,1,1,1,1,'UA000152','1');
-insert into list_access_data values ('LA000204','列表0204','levelOneCategoryList0204',1,1,1,1,1,'UA000153','1');
-insert into list_access_data values ('LA000205','列表0205','levelOneCategoryList0205',1,1,1,1,1,'UA000154','1');
-insert into list_access_data values ('LA000206','列表0206','levelOneCategoryList0206',1,1,1,1,1,'UA000154','1');
-insert into list_access_data values ('LA000207','列表0207','levelOneCategoryList0207',1,1,1,1,1,'UA000155','1');
-insert into list_access_data values ('LA000208','列表0208','levelOneCategoryList0208',1,1,1,1,1,'UA000156','1');
-insert into list_access_data values ('LA000209','列表0209','levelOneCategoryList0209',1,1,1,1,1,'UA000157','1');
-insert into list_access_data values ('LA000210','列表0210','levelOneCategoryList0210',1,1,1,1,1,'UA000157','1');
-insert into list_access_data values ('LA000211','列表0211','levelOneCategoryList0211',1,1,1,1,1,'UA000158','1');
-insert into list_access_data values ('LA000212','列表0212','levelOneCategoryList0212',1,1,1,1,1,'UA000159','1');
-insert into list_access_data values ('LA000213','列表0213','levelOneCategoryList0213',1,1,1,1,1,'UA000160','1');
-insert into list_access_data values ('LA000214','列表0214','levelOneCategoryList0214',1,1,1,1,1,'UA000160','1');
-insert into list_access_data values ('LA000215','列表0215','levelOneCategoryList0215',1,1,1,1,1,'UA000161','1');
-insert into list_access_data values ('LA000216','列表0216','levelOneCategoryList0216',1,1,1,1,1,'UA000162','1');
 
 	
 insert into object_access_data values ('OA000001','控制访问列表1','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000001','1');
@@ -1142,135 +893,33 @@ insert into object_access_data values ('OA000122','控制访问列表10122','Acc
 insert into object_access_data values ('OA000123','控制访问列表10123','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000092','1');
 insert into object_access_data values ('OA000124','控制访问列表10124','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000093','1');
 insert into object_access_data values ('OA000125','控制访问列表10125','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000094','1');
-insert into object_access_data values ('OA000126','控制访问列表10126','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000094','1');
-insert into object_access_data values ('OA000127','控制访问列表10127','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000095','1');
-insert into object_access_data values ('OA000128','控制访问列表10128','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000096','1');
-insert into object_access_data values ('OA000129','控制访问列表10129','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000097','1');
-insert into object_access_data values ('OA000130','控制访问列表10130','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000097','1');
-insert into object_access_data values ('OA000131','控制访问列表10131','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000098','1');
-insert into object_access_data values ('OA000132','控制访问列表10132','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000099','1');
-insert into object_access_data values ('OA000133','控制访问列表10133','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000100','1');
-insert into object_access_data values ('OA000134','控制访问列表10134','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000100','1');
-insert into object_access_data values ('OA000135','控制访问列表10135','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000101','1');
-insert into object_access_data values ('OA000136','控制访问列表10136','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000102','1');
-insert into object_access_data values ('OA000137','控制访问列表10137','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000103','1');
-insert into object_access_data values ('OA000138','控制访问列表10138','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000103','1');
-insert into object_access_data values ('OA000139','控制访问列表10139','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000104','1');
-insert into object_access_data values ('OA000140','控制访问列表10140','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000105','1');
-insert into object_access_data values ('OA000141','控制访问列表10141','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000106','1');
-insert into object_access_data values ('OA000142','控制访问列表10142','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000106','1');
-insert into object_access_data values ('OA000143','控制访问列表10143','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000107','1');
-insert into object_access_data values ('OA000144','控制访问列表10144','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000108','1');
-insert into object_access_data values ('OA000145','控制访问列表10145','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000109','1');
-insert into object_access_data values ('OA000146','控制访问列表10146','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000109','1');
-insert into object_access_data values ('OA000147','控制访问列表10147','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000110','1');
-insert into object_access_data values ('OA000148','控制访问列表10148','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000111','1');
-insert into object_access_data values ('OA000149','控制访问列表10149','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000112','1');
-insert into object_access_data values ('OA000150','控制访问列表10150','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000112','1');
-insert into object_access_data values ('OA000151','控制访问列表10151','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000113','1');
-insert into object_access_data values ('OA000152','控制访问列表10152','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000114','1');
-insert into object_access_data values ('OA000153','控制访问列表10153','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000115','1');
-insert into object_access_data values ('OA000154','控制访问列表10154','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000115','1');
-insert into object_access_data values ('OA000155','控制访问列表10155','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000116','1');
-insert into object_access_data values ('OA000156','控制访问列表10156','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000117','1');
-insert into object_access_data values ('OA000157','控制访问列表10157','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000118','1');
-insert into object_access_data values ('OA000158','控制访问列表10158','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000118','1');
-insert into object_access_data values ('OA000159','控制访问列表10159','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000119','1');
-insert into object_access_data values ('OA000160','控制访问列表10160','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000120','1');
-insert into object_access_data values ('OA000161','控制访问列表10161','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000121','1');
-insert into object_access_data values ('OA000162','控制访问列表10162','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000121','1');
-insert into object_access_data values ('OA000163','控制访问列表10163','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000122','1');
-insert into object_access_data values ('OA000164','控制访问列表10164','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000123','1');
-insert into object_access_data values ('OA000165','控制访问列表10165','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000124','1');
-insert into object_access_data values ('OA000166','控制访问列表10166','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000124','1');
-insert into object_access_data values ('OA000167','控制访问列表10167','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000125','1');
-insert into object_access_data values ('OA000168','控制访问列表10168','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000126','1');
-insert into object_access_data values ('OA000169','控制访问列表10169','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000127','1');
-insert into object_access_data values ('OA000170','控制访问列表10170','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000127','1');
-insert into object_access_data values ('OA000171','控制访问列表10171','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000128','1');
-insert into object_access_data values ('OA000172','控制访问列表10172','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000129','1');
-insert into object_access_data values ('OA000173','控制访问列表10173','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000130','1');
-insert into object_access_data values ('OA000174','控制访问列表10174','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000130','1');
-insert into object_access_data values ('OA000175','控制访问列表10175','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000131','1');
-insert into object_access_data values ('OA000176','控制访问列表10176','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000132','1');
-insert into object_access_data values ('OA000177','控制访问列表10177','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000133','1');
-insert into object_access_data values ('OA000178','控制访问列表10178','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000133','1');
-insert into object_access_data values ('OA000179','控制访问列表10179','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000134','1');
-insert into object_access_data values ('OA000180','控制访问列表10180','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000135','1');
-insert into object_access_data values ('OA000181','控制访问列表10181','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000136','1');
-insert into object_access_data values ('OA000182','控制访问列表10182','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000136','1');
-insert into object_access_data values ('OA000183','控制访问列表10183','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000137','1');
-insert into object_access_data values ('OA000184','控制访问列表10184','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000138','1');
-insert into object_access_data values ('OA000185','控制访问列表10185','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000139','1');
-insert into object_access_data values ('OA000186','控制访问列表10186','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000139','1');
-insert into object_access_data values ('OA000187','控制访问列表10187','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000140','1');
-insert into object_access_data values ('OA000188','控制访问列表10188','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000141','1');
-insert into object_access_data values ('OA000189','控制访问列表10189','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000142','1');
-insert into object_access_data values ('OA000190','控制访问列表10190','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000142','1');
-insert into object_access_data values ('OA000191','控制访问列表10191','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000143','1');
-insert into object_access_data values ('OA000192','控制访问列表10192','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000144','1');
-insert into object_access_data values ('OA000193','控制访问列表10193','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000145','1');
-insert into object_access_data values ('OA000194','控制访问列表10194','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000145','1');
-insert into object_access_data values ('OA000195','控制访问列表10195','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000146','1');
-insert into object_access_data values ('OA000196','控制访问列表10196','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000147','1');
-insert into object_access_data values ('OA000197','控制访问列表10197','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000148','1');
-insert into object_access_data values ('OA000198','控制访问列表10198','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000148','1');
-insert into object_access_data values ('OA000199','控制访问列表10199','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000149','1');
-insert into object_access_data values ('OA000200','控制访问列表10200','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000150','1');
-insert into object_access_data values ('OA000201','控制访问列表10201','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000151','1');
-insert into object_access_data values ('OA000202','控制访问列表10202','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000151','1');
-insert into object_access_data values ('OA000203','控制访问列表10203','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000152','1');
-insert into object_access_data values ('OA000204','控制访问列表10204','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000153','1');
-insert into object_access_data values ('OA000205','控制访问列表10205','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000154','1');
-insert into object_access_data values ('OA000206','控制访问列表10206','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000154','1');
-insert into object_access_data values ('OA000207','控制访问列表10207','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000155','1');
-insert into object_access_data values ('OA000208','控制访问列表10208','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000156','1');
-insert into object_access_data values ('OA000209','控制访问列表10209','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000157','1');
-insert into object_access_data values ('OA000210','控制访问列表10210','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000157','1');
-insert into object_access_data values ('OA000211','控制访问列表10211','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000158','1');
-insert into object_access_data values ('OA000212','控制访问列表10212','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000159','1');
-insert into object_access_data values ('OA000213','控制访问列表10213','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000160','1');
-insert into object_access_data values ('OA000214','控制访问列表10214','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000160','1');
-insert into object_access_data values ('OA000215','控制访问列表10215','FranchiseeStoreCountryCenter','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','catalogList','UA000161','1');
-insert into object_access_data values ('OA000216','控制访问列表10216','AccountSet','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','levelOneCategoryList','UA000162','1');
 
 	
-insert into login_history_data values ('LH000001','2019-02-06 00:35:59','192.168.1.1','登陆成功','SU000001','1');
-insert into login_history_data values ('LH000002','2019-02-16 09:56:37','192.168.1.2','登陆成功0002','SU000001','1');
-insert into login_history_data values ('LH000003','2019-02-08 10:29:48','192.168.1.1','登陆成功0003','SU000002','1');
-insert into login_history_data values ('LH000004','2019-02-13 02:38:59','192.168.1.2','登陆成功0004','SU000002','1');
-insert into login_history_data values ('LH000005','2019-02-05 07:27:52','192.168.1.1','登陆成功0005','SU000003','1');
-insert into login_history_data values ('LH000006','2019-02-13 19:19:01','192.168.1.2','登陆成功0006','SU000003','1');
-insert into login_history_data values ('LH000007','2019-02-15 23:38:09','192.168.1.1','登陆成功0007','SU000004','1');
-insert into login_history_data values ('LH000008','2019-01-31 18:34:58','192.168.1.2','登陆成功0008','SU000004','1');
-insert into login_history_data values ('LH000009','2019-02-12 14:40:55','192.168.1.1','登陆成功0009','SU000005','1');
-insert into login_history_data values ('LH000010','2019-02-13 21:28:55','192.168.1.2','登陆成功0010','SU000005','1');
-insert into login_history_data values ('LH000011','2019-02-08 20:00:16','192.168.1.1','登陆成功0011','SU000006','1');
-insert into login_history_data values ('LH000012','2019-02-22 06:45:56','192.168.1.2','登陆成功0012','SU000006','1');
-insert into login_history_data values ('LH000013','2019-02-21 15:28:22','192.168.1.1','登陆成功0013','SU000007','1');
-insert into login_history_data values ('LH000014','2019-02-08 01:59:51','192.168.1.2','登陆成功0014','SU000007','1');
-insert into login_history_data values ('LH000015','2019-02-17 17:55:19','192.168.1.1','登陆成功0015','SU000008','1');
-insert into login_history_data values ('LH000016','2019-02-13 15:37:07','192.168.1.2','登陆成功0016','SU000008','1');
-insert into login_history_data values ('LH000017','2019-01-31 19:21:45','192.168.1.1','登陆成功0017','SU000009','1');
-insert into login_history_data values ('LH000018','2019-02-09 19:09:49','192.168.1.2','登陆成功0018','SU000009','1');
-insert into login_history_data values ('LH000019','2019-02-21 03:39:49','192.168.1.1','登陆成功0019','SU000010','1');
-insert into login_history_data values ('LH000020','2019-02-05 23:31:04','192.168.1.2','登陆成功0020','SU000010','1');
-insert into login_history_data values ('LH000021','2019-02-18 17:48:01','192.168.1.1','登陆成功0021','SU000011','1');
-insert into login_history_data values ('LH000022','2019-02-14 17:42:00','192.168.1.2','登陆成功0022','SU000011','1');
-insert into login_history_data values ('LH000023','2019-02-03 06:58:00','192.168.1.1','登陆成功0023','SU000012','1');
-insert into login_history_data values ('LH000024','2019-02-09 12:35:35','192.168.1.2','登陆成功0024','SU000012','1');
-insert into login_history_data values ('LH000025','2019-02-15 18:07:48','192.168.1.1','登陆成功0025','SU000013','1');
-insert into login_history_data values ('LH000026','2019-02-13 20:49:21','192.168.1.2','登陆成功0026','SU000013','1');
-insert into login_history_data values ('LH000027','2019-02-15 03:23:56','192.168.1.1','登陆成功0027','SU000014','1');
-insert into login_history_data values ('LH000028','2019-02-07 13:45:03','192.168.1.2','登陆成功0028','SU000014','1');
-insert into login_history_data values ('LH000029','2019-02-05 14:25:48','192.168.1.1','登陆成功0029','SU000015','1');
-insert into login_history_data values ('LH000030','2019-02-16 09:35:19','192.168.1.2','登陆成功0030','SU000015','1');
-insert into login_history_data values ('LH000031','2019-02-20 19:11:20','192.168.1.1','登陆成功0031','SU000016','1');
-insert into login_history_data values ('LH000032','2019-02-11 23:44:26','192.168.1.2','登陆成功0032','SU000016','1');
-insert into login_history_data values ('LH000033','2019-02-01 04:20:11','192.168.1.1','登陆成功0033','SU000017','1');
-insert into login_history_data values ('LH000034','2019-02-17 19:08:52','192.168.1.2','登陆成功0034','SU000017','1');
-insert into login_history_data values ('LH000035','2019-02-20 20:53:13','192.168.1.1','登陆成功0035','SU000018','1');
-insert into login_history_data values ('LH000036','2019-02-13 07:41:21','192.168.1.2','登陆成功0036','SU000018','1');
+insert into login_history_data values ('LH000001','2019-02-05 18:41:34','192.168.1.1','登陆成功','SU000001','1');
+insert into login_history_data values ('LH000002','2019-02-01 16:45:19','192.168.1.2','登陆成功0002','SU000001','1');
+insert into login_history_data values ('LH000003','2019-02-12 08:55:10','192.168.1.1','登陆成功0003','SU000002','1');
+insert into login_history_data values ('LH000004','2019-02-02 22:25:01','192.168.1.2','登陆成功0004','SU000002','1');
+insert into login_history_data values ('LH000005','2019-02-09 20:50:59','192.168.1.1','登陆成功0005','SU000003','1');
+insert into login_history_data values ('LH000006','2019-02-20 20:45:00','192.168.1.2','登陆成功0006','SU000003','1');
+insert into login_history_data values ('LH000007','2019-02-19 03:02:32','192.168.1.1','登陆成功0007','SU000004','1');
+insert into login_history_data values ('LH000008','2019-02-11 03:25:20','192.168.1.2','登陆成功0008','SU000004','1');
+insert into login_history_data values ('LH000009','2019-02-21 19:27:29','192.168.1.1','登陆成功0009','SU000005','1');
+insert into login_history_data values ('LH000010','2019-02-01 07:57:18','192.168.1.2','登陆成功0010','SU000005','1');
+insert into login_history_data values ('LH000011','2019-02-14 20:11:53','192.168.1.1','登陆成功0011','SU000006','1');
+insert into login_history_data values ('LH000012','2019-02-18 05:41:53','192.168.1.2','登陆成功0012','SU000006','1');
+insert into login_history_data values ('LH000013','2019-02-21 22:38:43','192.168.1.1','登陆成功0013','SU000007','1');
+insert into login_history_data values ('LH000014','2019-02-21 11:20:18','192.168.1.2','登陆成功0014','SU000007','1');
+insert into login_history_data values ('LH000015','2019-02-10 16:27:48','192.168.1.1','登陆成功0015','SU000008','1');
+insert into login_history_data values ('LH000016','2019-02-07 22:43:36','192.168.1.2','登陆成功0016','SU000008','1');
+insert into login_history_data values ('LH000017','2019-02-13 20:57:09','192.168.1.1','登陆成功0017','SU000009','1');
+insert into login_history_data values ('LH000018','2019-02-01 23:39:47','192.168.1.2','登陆成功0018','SU000009','1');
+insert into login_history_data values ('LH000019','2019-02-10 15:24:25','192.168.1.1','登陆成功0019','SU000010','1');
+insert into login_history_data values ('LH000020','2019-02-06 20:30:17','192.168.1.2','登陆成功0020','SU000010','1');
+insert into login_history_data values ('LH000021','2019-02-02 01:59:41','192.168.1.1','登陆成功0021','SU000011','1');
+insert into login_history_data values ('LH000022','2019-02-21 11:59:48','192.168.1.2','登陆成功0022','SU000011','1');
+insert into login_history_data values ('LH000023','2019-02-16 00:00:36','192.168.1.1','登陆成功0023','SU000012','1');
+insert into login_history_data values ('LH000024','2019-02-21 15:24:26','192.168.1.2','登陆成功0024','SU000012','1');
+insert into login_history_data values ('LH000025','2019-02-07 20:45:05','192.168.1.1','登陆成功0025','SU000013','1');
 
 	
 insert into generic_form_data values ('GF000001','登记输入单','姓名就是你身份证上的名字','1');
@@ -1281,7 +930,6 @@ insert into form_message_data values ('FM000002','字段组合错误0002','GF000
 insert into form_message_data values ('FM000003','字段组合错误0003','GF000002','warning','1');
 insert into form_message_data values ('FM000004','字段组合错误0004','GF000002','danger','1');
 insert into form_message_data values ('FM000005','字段组合错误0005','GF000003','success','1');
-insert into form_message_data values ('FM000006','字段组合错误0006','GF000003','info','1');
 
 	
 insert into form_field_message_data values ('FFM000001','输入错误','name','GF000001','success','1');
@@ -1289,7 +937,6 @@ insert into form_field_message_data values ('FFM000002','输入错误0002','name
 insert into form_field_message_data values ('FFM000003','输入错误0003','name0003','GF000002','warning','1');
 insert into form_field_message_data values ('FFM000004','输入错误0004','name0004','GF000002','danger','1');
 insert into form_field_message_data values ('FFM000005','输入错误0005','name0005','GF000003','success','1');
-insert into form_field_message_data values ('FFM000006','输入错误0006','name0006','GF000003','info','1');
 
 	
 insert into form_field_data values ('FF000001','姓名','name','name','text','GF000001','姓名就是你身份证上的名字','李一一','姓名就是你身份证上的名字','基础信息','maybe any value','a value expression',true,true,0,'','','1');
@@ -1297,7 +944,6 @@ insert into form_field_data values ('FF000002','年龄','age','name0002','longte
 insert into form_field_data values ('FF000003','出生地','birth_place','name0003','date','GF000001','姓名就是你身份证上的名字0003','李一一0003','姓名就是你身份证上的名字0003','基础信息','maybe any value0003','a value expression0003',true,true,0,'','','1');
 insert into form_field_data values ('FF000004','国籍','country','name0004','date_time','GF000001','姓名就是你身份证上的名字0004','李一一0004','姓名就是你身份证上的名字0004','扩展信息','maybe any value0004','a value expression0004',false,false,0,'男,女','男,女','1');
 insert into form_field_data values ('FF000005','姓名','name','name0005','money','GF000002','姓名就是你身份证上的名字0005','李一一0005','姓名就是你身份证上的名字0005','基础信息','maybe any value0005','a value expression0005',true,true,0,'高,矮','高,矮','1');
-insert into form_field_data values ('FF000006','年龄','age','name0006','url','GF000002','姓名就是你身份证上的名字0006','李一一0006','姓名就是你身份证上的名字0006','扩展信息','maybe any value0006','a value expression0006',false,false,0,'','','1');
 
 	
 insert into form_action_data values ('FA000001','功能','name','save','default','genericFormManager/name/name0002/name0003/','GF000001','1');
@@ -1305,7 +951,6 @@ insert into form_action_data values ('FA000002','功能0002','name0002','update'
 insert into form_action_data values ('FA000003','功能0003','name0003','remove','danger','genericFormManager/name/name0002/name0003/0003','GF000002','1');
 insert into form_action_data values ('FA000004','功能0004','name0004','save','primary','genericFormManager/name/name0002/name0003/0004','GF000002','1');
 insert into form_action_data values ('FA000005','功能0005','name0005','update','default','genericFormManager/name/name0002/name0003/0005','GF000003','1');
-insert into form_action_data values ('FA000006','功能0006','name0006','remove','warning','genericFormManager/name/name0002/name0003/0006','GF000003','1');
 
 /*
 Mysql innodb's foreign key has index automatically
